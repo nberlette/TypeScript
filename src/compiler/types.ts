@@ -7195,6 +7195,10 @@ export interface UserWatchFactory {
     watchDirectory?(fileName: string, callback: DirectoryWatcherCallback, recursive: boolean, options: WatchOptions | undefined): FileWatcher;
     onConfigurationChanged?(config: any): void;
 }
+/**@internal*/
+export interface WatchOptionsFactoryHost {
+    searchPaths: readonly string[];
+}
 export interface WatchOptions {
     watchFile?: WatchFileKind;
     watchDirectory?: WatchDirectoryKind;
@@ -7206,6 +7210,7 @@ export interface WatchOptions {
 
     // All the internal properties are set as non enumerable and non configurable so that they arenot enumerated when checking if options have changed
     /** @internal */ getResolvedWatchFactory?(): UserWatchFactory | undefined;
+    /** @internal */ getHost?(): WatchOptionsFactoryHost;
 
     [option: string]: CompilerOptionsValue | Function | undefined;
 }
