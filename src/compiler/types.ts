@@ -7141,6 +7141,7 @@ export interface CompilerOptions {
      */
     pathsBasePath?: string;
     /** @internal */ plugins?: PluginImport[];
+    /** @internal */ allowPlugins?: boolean;
     preserveConstEnums?: boolean;
     noImplicitOverride?: boolean;
     preserveSymlinks?: boolean;

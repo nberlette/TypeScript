@@ -22,22 +22,34 @@ interface String { charAt: any; }
 interface Array<T> { length: number; [n: number]: T; }
 
 
-/a/lib/tsc.js -b -w --extendedDiagnostics --allowPlugins
+/a/lib/tsc.js -w --extendedDiagnostics
 Output::
 [[90m12:00:23 AM[0m] Starting compilation in watch mode...
 
-[[90m12:00:29 AM[0m] Found 0 errors. Watching for file changes.
+Current directory: /user/username/projects/myproject CaseSensitiveFileNames: false
+FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/tsconfig.json 2000 {} Config file
+Synchronizing program
+CreatingProgramWith::
+  roots: ["/user/username/projects/myproject/a.ts","/user/username/projects/myproject/b.ts"]
+  options: {"watch":true,"extendedDiagnostics":true,"configFilePath":"/user/username/projects/myproject/tsconfig.json"}
+FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/a.ts 250 {} Source file
+FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/b.ts 250 {} Source file
+FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 250 {} Source file
+DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {} Type roots
+Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {} Type roots
+[96mtsconfig.json[0m:[93m1[0m:[93m18[0m - [91merror[0m[90m TS5110: [0mOption 'watchFactory' cannot be specified without passing '--allowPlugins' on command line.
 
-FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/tsconfig.json 2000 {"watchFactory":"myplugin"} Config file /user/username/projects/myproject/tsconfig.json
-Custom watchFactory is ignored because of not running in environment that supports 'require'. Watches will defualt to builtin.
-DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 1 {"watchFactory":"myplugin"} Wild card directory /user/username/projects/myproject/tsconfig.json
-Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 1 {"watchFactory":"myplugin"} Wild card directory /user/username/projects/myproject/tsconfig.json
-FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/a.ts 250 {"watchFactory":"myplugin"} Source file /user/username/projects/myproject/tsconfig.json
-FileWatcher:: Added:: WatchInfo: /user/username/projects/myproject/b.ts 250 {"watchFactory":"myplugin"} Source file /user/username/projects/myproject/tsconfig.json
+[7m1[0m {"watchOptions":{"watchFactory":"myplugin"}}
+[7m [0m [91m                 ~~~~~~~~~~~~~~[0m
+
+[[90m12:00:28 AM[0m] Found 1 error. Watching for file changes.
+
+DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 1 {} Wild card directory
+Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 1 {} Wild card directory
 
 
 Program root files: ["/user/username/projects/myproject/a.ts","/user/username/projects/myproject/b.ts"]
-Program options: {"watch":true,"extendedDiagnostics":true,"allowPlugins":true,"configFilePath":"/user/username/projects/myproject/tsconfig.json"}
+Program options: {"watch":true,"extendedDiagnostics":true,"configFilePath":"/user/username/projects/myproject/tsconfig.json"}
 Program structureReused: Not
 Program files::
 /a/lib/lib.d.ts
@@ -54,12 +66,18 @@ Shape signatures in builder refreshed for::
 /user/username/projects/myproject/a.ts (used version)
 /user/username/projects/myproject/b.ts (used version)
 
+PolledWatches::
+/user/username/projects/myproject/node_modules/@types: *new*
+  {"pollingInterval":500}
+
 FsWatches::
 /user/username/projects/myproject/tsconfig.json: *new*
   {}
 /user/username/projects/myproject/a.ts: *new*
   {}
 /user/username/projects/myproject/b.ts: *new*
+  {}
+/a/lib/lib.d.ts: *new*
   {}
 
 FsWatchesRecursive::
@@ -105,17 +123,27 @@ export class b { prop = "hello"; foo() { return this.prop; } }export function fo
 
 
 Output::
-FileWatcher:: Triggered with /user/username/projects/myproject/b.ts 1:: WatchInfo: /user/username/projects/myproject/b.ts 250 {"watchFactory":"myplugin"} Source file /user/username/projects/myproject/tsconfig.json
-Elapsed:: *ms FileWatcher:: Triggered with /user/username/projects/myproject/b.ts 1:: WatchInfo: /user/username/projects/myproject/b.ts 250 {"watchFactory":"myplugin"} Source file /user/username/projects/myproject/tsconfig.json
-[[90m12:00:32 AM[0m] File change detected. Starting incremental compilation...
+FileWatcher:: Triggered with /user/username/projects/myproject/b.ts 1:: WatchInfo: /user/username/projects/myproject/b.ts 250 {} Source file
+Scheduling update
+Elapsed:: *ms FileWatcher:: Triggered with /user/username/projects/myproject/b.ts 1:: WatchInfo: /user/username/projects/myproject/b.ts 250 {} Source file
+Synchronizing program
+[[90m12:00:31 AM[0m] File change detected. Starting incremental compilation...
 
-[[90m12:00:38 AM[0m] Found 0 errors. Watching for file changes.
+CreatingProgramWith::
+  roots: ["/user/username/projects/myproject/a.ts","/user/username/projects/myproject/b.ts"]
+  options: {"watch":true,"extendedDiagnostics":true,"configFilePath":"/user/username/projects/myproject/tsconfig.json"}
+[96mtsconfig.json[0m:[93m1[0m:[93m18[0m - [91merror[0m[90m TS5110: [0mOption 'watchFactory' cannot be specified without passing '--allowPlugins' on command line.
+
+[7m1[0m {"watchOptions":{"watchFactory":"myplugin"}}
+[7m [0m [91m                 ~~~~~~~~~~~~~~[0m
+
+[[90m12:00:35 AM[0m] Found 1 error. Watching for file changes.
 
 
 
 Program root files: ["/user/username/projects/myproject/a.ts","/user/username/projects/myproject/b.ts"]
-Program options: {"watch":true,"extendedDiagnostics":true,"allowPlugins":true,"configFilePath":"/user/username/projects/myproject/tsconfig.json"}
-Program structureReused: Not
+Program options: {"watch":true,"extendedDiagnostics":true,"configFilePath":"/user/username/projects/myproject/tsconfig.json"}
+Program structureReused: Completely
 Program files::
 /a/lib/lib.d.ts
 /user/username/projects/myproject/a.ts
@@ -129,7 +157,6 @@ Shape signatures in builder refreshed for::
 
 exitCode:: ExitStatus.undefined
 
-//// [/user/username/projects/myproject/a.js] file changed its modified time
 //// [/user/username/projects/myproject/b.js]
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
