@@ -56,9 +56,11 @@ Loading plugin: some-plugin
 Info 11   [00:00:24.000] Plugin validation succeeded
 Info 12   [00:00:25.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined WatchType: Closed Script info
 Info 13   [00:00:26.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 14   [00:00:27.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 15   [00:00:28.000] Project '/tsconfig.json' (Configured)
-Info 16   [00:00:29.000] 	Files (2)
+Info 14   [00:00:27.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 15   [00:00:28.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 16   [00:00:29.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 17   [00:00:30.000] Project '/tsconfig.json' (Configured)
+Info 18   [00:00:31.000] 	Files (2)
 	/a.ts SVC-1-0 "class c { prop = \"hello\"; foo() { return this.prop; } }"
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 
@@ -68,19 +70,23 @@ Info 16   [00:00:29.000] 	Files (2)
 	a/lib/lib.d.ts
 	  Matched by default include pattern '**/*'
 
-Info 17   [00:00:30.000] -----------------------------------------------
-Info 18   [00:00:31.000] Project '/tsconfig.json' (Configured)
-Info 18   [00:00:32.000] 	Files (2)
+Info 19   [00:00:32.000] -----------------------------------------------
+Info 20   [00:00:33.000] Project '/tsconfig.json' (Configured)
+Info 20   [00:00:34.000] 	Files (2)
 
-Info 18   [00:00:33.000] -----------------------------------------------
-Info 18   [00:00:34.000] Open files: 
-Info 18   [00:00:35.000] 	FileName: /a.ts ProjectRootPath: undefined
-Info 18   [00:00:36.000] 		Projects: /tsconfig.json
-Info 18   [00:00:37.000] response:
+Info 20   [00:00:35.000] -----------------------------------------------
+Info 20   [00:00:36.000] Open files: 
+Info 20   [00:00:37.000] 	FileName: /a.ts ProjectRootPath: undefined
+Info 20   [00:00:38.000] 		Projects: /tsconfig.json
+Info 20   [00:00:39.000] response:
     {
       "responseRequired": false
     }
 After request
+
+PolledWatches::
+/node_modules/@types: *new*
+  {"pollingInterval":500}
 
 FsWatches::
 /tsconfig.json: *new*
@@ -94,7 +100,7 @@ FsWatchesRecursive::
 
 Before request
 
-Info 19   [00:00:38.000] request:
+Info 21   [00:00:40.000] request:
     {
       "command": "testProtocolCommand",
       "arguments": "testProtocolCommandRequest",
@@ -107,7 +113,7 @@ addProtocolHandler: {
  "seq": 2,
  "type": "request"
 }
-Info 20   [00:00:39.000] response:
+Info 22   [00:00:41.000] response:
     {
       "response": "testProtocolCommandResponse"
     }

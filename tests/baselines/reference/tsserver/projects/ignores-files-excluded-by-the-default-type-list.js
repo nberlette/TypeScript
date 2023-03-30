@@ -29,16 +29,18 @@ Info 3    [00:00:40.000] Excluding files based on rule Office Nuget matching fil
 Info 4    [00:00:41.000] FileWatcher:: Added:: WatchInfo: /a/b/f1.js 500 undefined WatchType: Closed Script info
 Info 5    [00:00:42.000] Starting updateGraphWorker: Project: project
 Info 6    [00:00:43.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: project WatchType: Missing file
-Info 7    [00:00:44.000] Finishing updateGraphWorker: Project: project Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 8    [00:00:45.000] Project 'project' (External)
-Info 9    [00:00:46.000] 	Files (1)
+Info 7    [00:00:44.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: project WatchType: Type roots
+Info 8    [00:00:45.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: project WatchType: Type roots
+Info 9    [00:00:46.000] Finishing updateGraphWorker: Project: project Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 10   [00:00:47.000] Project 'project' (External)
+Info 11   [00:00:48.000] 	Files (1)
 	/a/b/f1.js Text-1 "export let x = 5"
 
 
 	a/b/f1.js
 	  Root file specified for compilation
 
-Info 10   [00:00:47.000] -----------------------------------------------
+Info 12   [00:00:49.000] -----------------------------------------------
 TypeAcquisition:: {
  "include": [
   "kendo-ui",

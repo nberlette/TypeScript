@@ -154,9 +154,11 @@ Info 22   [00:01:28.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 u
 Info 23   [00:01:29.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /tsconfig.json WatchType: Failed Lookup Locations
 Info 24   [00:01:30.000] FileWatcher:: Added:: WatchInfo: /node_modules/@angular/forms/package.json 2000 undefined Project: /tsconfig.json WatchType: File location affecting resolution
 Info 25   [00:01:31.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 26   [00:01:32.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 27   [00:01:33.000] Project '/tsconfig.json' (Configured)
-Info 28   [00:01:34.000] 	Files (2)
+Info 26   [00:01:32.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 27   [00:01:33.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 28   [00:01:34.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 29   [00:01:35.000] Project '/tsconfig.json' (Configured)
+Info 30   [00:01:36.000] 	Files (2)
 	/node_modules/@angular/forms/forms.d.ts SVC-1-0 "export declare class PatternValidator {}"
 	/index.ts SVC-1-0 "import '@angular/forms'"
 
@@ -166,22 +168,22 @@ Info 28   [00:01:34.000] 	Files (2)
 	index.ts
 	  Matched by default include pattern '**/*'
 
-Info 29   [00:01:35.000] -----------------------------------------------
-Info 30   [00:01:36.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
-Info 31   [00:01:37.000] Project '/tsconfig.json' (Configured)
-Info 31   [00:01:38.000] 	Files (2)
+Info 31   [00:01:37.000] -----------------------------------------------
+Info 32   [00:01:38.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
+Info 33   [00:01:39.000] Project '/tsconfig.json' (Configured)
+Info 33   [00:01:40.000] 	Files (2)
 
-Info 31   [00:01:39.000] -----------------------------------------------
-Info 31   [00:01:40.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 31   [00:01:41.000] 	Files (1)
+Info 33   [00:01:41.000] -----------------------------------------------
+Info 33   [00:01:42.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 33   [00:01:43.000] 	Files (1)
 
-Info 31   [00:01:42.000] -----------------------------------------------
-Info 31   [00:01:43.000] Open files: 
-Info 31   [00:01:44.000] 	FileName: /node_modules/@angular/forms/forms.d.ts ProjectRootPath: undefined
-Info 31   [00:01:45.000] 		Projects: /dev/null/inferredProject1*,/tsconfig.json
-Info 31   [00:01:46.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 31   [00:01:47.000] 		Projects: /tsconfig.json
-Info 31   [00:01:48.000] response:
+Info 33   [00:01:44.000] -----------------------------------------------
+Info 33   [00:01:45.000] Open files: 
+Info 33   [00:01:46.000] 	FileName: /node_modules/@angular/forms/forms.d.ts ProjectRootPath: undefined
+Info 33   [00:01:47.000] 		Projects: /dev/null/inferredProject1*,/tsconfig.json
+Info 33   [00:01:48.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 33   [00:01:49.000] 		Projects: /tsconfig.json
+Info 33   [00:01:50.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -196,6 +198,8 @@ PolledWatches::
 /node_modules/@angular/forms/bower_components:
   {"pollingInterval":500}
 /node_modules/@angular/forms/node_modules:
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::

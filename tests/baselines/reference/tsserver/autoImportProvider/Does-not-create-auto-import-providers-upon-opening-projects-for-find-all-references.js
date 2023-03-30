@@ -194,9 +194,11 @@ Info 45   [00:01:32.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /pa
 Info 46   [00:01:33.000] DirectoryWatcher:: Added:: WatchInfo: /packages 1 undefined Project: /tsconfig.json WatchType: Failed Lookup Locations
 Info 47   [00:01:34.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /packages 1 undefined Project: /tsconfig.json WatchType: Failed Lookup Locations
 Info 48   [00:01:35.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 49   [00:01:36.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 50   [00:01:37.000] Project '/tsconfig.json' (Configured)
-Info 51   [00:01:38.000] 	Files (2)
+Info 49   [00:01:36.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 50   [00:01:37.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 51   [00:01:38.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 52   [00:01:39.000] Project '/tsconfig.json' (Configured)
+Info 53   [00:01:40.000] 	Files (2)
 	/packages/b/index.ts SVC-1-0 "export class B {}"
 	/packages/a/index.ts Text-1 "import { B } from '../b';"
 
@@ -207,15 +209,15 @@ Info 51   [00:01:38.000] 	Files (2)
 	packages/a/index.ts
 	  Matched by default include pattern '**/*'
 
-Info 52   [00:01:39.000] -----------------------------------------------
-Info 53   [00:01:40.000] Creating configuration project /packages/a/tsconfig.json
-Info 54   [00:01:41.000] Starting updateGraphWorker: Project: /packages/a/tsconfig.json
-Info 55   [00:01:42.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /packages/a/tsconfig.json WatchType: Missing file
-Info 56   [00:01:43.000] DirectoryWatcher:: Added:: WatchInfo: /packages/a/node_modules/@types 1 undefined Project: /packages/a/tsconfig.json WatchType: Type roots
-Info 57   [00:01:44.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /packages/a/node_modules/@types 1 undefined Project: /packages/a/tsconfig.json WatchType: Type roots
-Info 58   [00:01:45.000] Finishing updateGraphWorker: Project: /packages/a/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 59   [00:01:46.000] Project '/packages/a/tsconfig.json' (Configured)
-Info 60   [00:01:47.000] 	Files (2)
+Info 54   [00:01:41.000] -----------------------------------------------
+Info 55   [00:01:42.000] Creating configuration project /packages/a/tsconfig.json
+Info 56   [00:01:43.000] Starting updateGraphWorker: Project: /packages/a/tsconfig.json
+Info 57   [00:01:44.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /packages/a/tsconfig.json WatchType: Missing file
+Info 58   [00:01:45.000] DirectoryWatcher:: Added:: WatchInfo: /packages/a/node_modules/@types 1 undefined Project: /packages/a/tsconfig.json WatchType: Type roots
+Info 59   [00:01:46.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /packages/a/node_modules/@types 1 undefined Project: /packages/a/tsconfig.json WatchType: Type roots
+Info 60   [00:01:47.000] Finishing updateGraphWorker: Project: /packages/a/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 61   [00:01:48.000] Project '/packages/a/tsconfig.json' (Configured)
+Info 62   [00:01:49.000] 	Files (2)
 	/packages/b/index.ts SVC-1-0 "export class B {}"
 	/packages/a/index.ts Text-1 "import { B } from '../b';"
 
@@ -225,22 +227,22 @@ Info 60   [00:01:47.000] 	Files (2)
 	index.ts
 	  Matched by default include pattern '**/*'
 
-Info 61   [00:01:48.000] -----------------------------------------------
-Info 62   [00:01:49.000] Finding references to /packages/b/index.ts position 13 in project /tsconfig.json
-Info 63   [00:01:50.000] Search path: /packages/b
-Info 64   [00:01:51.000] For info: /packages/b/index.ts :: Config file name: /packages/b/tsconfig.json
+Info 63   [00:01:50.000] -----------------------------------------------
+Info 64   [00:01:51.000] Finding references to /packages/b/index.ts position 13 in project /tsconfig.json
 Info 65   [00:01:52.000] Search path: /packages/b
 Info 66   [00:01:53.000] For info: /packages/b/index.ts :: Config file name: /packages/b/tsconfig.json
-Info 67   [00:01:54.000] Search path: /packages/a
-Info 68   [00:01:55.000] For info: /packages/a/index.ts :: Config file name: /packages/a/tsconfig.json
+Info 67   [00:01:54.000] Search path: /packages/b
+Info 68   [00:01:55.000] For info: /packages/b/index.ts :: Config file name: /packages/b/tsconfig.json
 Info 69   [00:01:56.000] Search path: /packages/a
 Info 70   [00:01:57.000] For info: /packages/a/index.ts :: Config file name: /packages/a/tsconfig.json
-Info 71   [00:01:58.000] Finding references to /packages/b/index.ts position 13 in project /packages/a/tsconfig.json
-Info 72   [00:01:59.000] Search path: /packages/b
-Info 73   [00:02:00.000] For info: /packages/b/index.ts :: Config file name: /packages/b/tsconfig.json
+Info 71   [00:01:58.000] Search path: /packages/a
+Info 72   [00:01:59.000] For info: /packages/a/index.ts :: Config file name: /packages/a/tsconfig.json
+Info 73   [00:02:00.000] Finding references to /packages/b/index.ts position 13 in project /packages/a/tsconfig.json
 Info 74   [00:02:01.000] Search path: /packages/b
 Info 75   [00:02:02.000] For info: /packages/b/index.ts :: Config file name: /packages/b/tsconfig.json
-Info 76   [00:02:03.000] response:
+Info 76   [00:02:03.000] Search path: /packages/b
+Info 77   [00:02:04.000] For info: /packages/b/index.ts :: Config file name: /packages/b/tsconfig.json
+Info 78   [00:02:05.000] response:
     {
       "response": {
         "refs": [
@@ -301,6 +303,8 @@ PolledWatches::
 /a/lib/lib.d.ts:
   {"pollingInterval":500}
 /packages/b/node_modules/@types:
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 /packages/a/node_modules/@types: *new*
   {"pollingInterval":500}

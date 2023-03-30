@@ -63,9 +63,11 @@ Info 21   [00:00:34.000] Enabling plugin myPlugin/../malicious from candidate pa
 Info 22   [00:00:35.000] Skipped loading plugin myPlugin/../malicious because only package name is allowed plugin name
 Info 23   [00:00:36.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined WatchType: Closed Script info
 Info 24   [00:00:37.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 25   [00:00:38.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 26   [00:00:39.000] Project '/tsconfig.json' (Configured)
-Info 27   [00:00:40.000] 	Files (2)
+Info 25   [00:00:38.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 26   [00:00:39.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 27   [00:00:40.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 28   [00:00:41.000] Project '/tsconfig.json' (Configured)
+Info 29   [00:00:42.000] 	Files (2)
 	/a.ts SVC-1-0 "class c { prop = \"hello\"; foo() { return this.prop; } }"
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 
@@ -75,19 +77,23 @@ Info 27   [00:00:40.000] 	Files (2)
 	a/lib/lib.d.ts
 	  Matched by default include pattern '**/*'
 
-Info 28   [00:00:41.000] -----------------------------------------------
-Info 29   [00:00:42.000] Project '/tsconfig.json' (Configured)
-Info 29   [00:00:43.000] 	Files (2)
+Info 30   [00:00:43.000] -----------------------------------------------
+Info 31   [00:00:44.000] Project '/tsconfig.json' (Configured)
+Info 31   [00:00:45.000] 	Files (2)
 
-Info 29   [00:00:44.000] -----------------------------------------------
-Info 29   [00:00:45.000] Open files: 
-Info 29   [00:00:46.000] 	FileName: /a.ts ProjectRootPath: undefined
-Info 29   [00:00:47.000] 		Projects: /tsconfig.json
-Info 29   [00:00:48.000] response:
+Info 31   [00:00:46.000] -----------------------------------------------
+Info 31   [00:00:47.000] Open files: 
+Info 31   [00:00:48.000] 	FileName: /a.ts ProjectRootPath: undefined
+Info 31   [00:00:49.000] 		Projects: /tsconfig.json
+Info 31   [00:00:50.000] response:
     {
       "responseRequired": false
     }
 After request
+
+PolledWatches::
+/node_modules/@types: *new*
+  {"pollingInterval":500}
 
 FsWatches::
 /tsconfig.json: *new*

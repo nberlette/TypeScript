@@ -1309,9 +1309,11 @@ Info 260  [00:12:49.000] FileWatcher:: Added:: WatchInfo: /lib/a_98.ts 500 undef
 Info 261  [00:12:50.000] FileWatcher:: Added:: WatchInfo: /lib/a_99.ts 500 undefined WatchType: Closed Script info
 Info 262  [00:12:51.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 263  [00:12:52.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 264  [00:12:53.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 265  [00:12:54.000] Project '/tsconfig.json' (Configured)
-Info 266  [00:12:55.000] 	Files (251)
+Info 264  [00:12:53.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 265  [00:12:54.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 266  [00:12:55.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 267  [00:12:56.000] Project '/tsconfig.json' (Configured)
+Info 268  [00:12:57.000] 	Files (251)
 	/index.ts SVC-1-0 ""
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;"
@@ -2068,15 +2070,15 @@ Info 266  [00:12:55.000] 	Files (251)
 	lib/a_99.ts
 	  Matched by default include pattern '**/*'
 
-Info 267  [00:12:56.000] -----------------------------------------------
-Info 268  [00:12:57.000] Project '/tsconfig.json' (Configured)
-Info 268  [00:12:58.000] 	Files (251)
+Info 269  [00:12:58.000] -----------------------------------------------
+Info 270  [00:12:59.000] Project '/tsconfig.json' (Configured)
+Info 270  [00:13:00.000] 	Files (251)
 
-Info 268  [00:12:59.000] -----------------------------------------------
-Info 268  [00:13:00.000] Open files: 
-Info 268  [00:13:01.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 268  [00:13:02.000] 		Projects: /tsconfig.json
-Info 268  [00:13:03.000] response:
+Info 270  [00:13:01.000] -----------------------------------------------
+Info 270  [00:13:02.000] Open files: 
+Info 270  [00:13:03.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 270  [00:13:04.000] 		Projects: /tsconfig.json
+Info 270  [00:13:05.000] response:
     {
       "responseRequired": false
     }
@@ -2084,6 +2086,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::
@@ -2596,7 +2600,7 @@ FsWatchesRecursive::
 
 Before request
 
-Info 269  [00:13:04.000] request:
+Info 271  [00:13:06.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -2622,7 +2626,7 @@ Info 269  [00:13:04.000] request:
       "seq": 3,
       "type": "request"
     }
-Info 270  [00:13:05.000] response:
+Info 272  [00:13:07.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -2631,7 +2635,7 @@ After request
 
 Before request
 
-Info 271  [00:13:06.000] request:
+Info 273  [00:13:08.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -2642,10 +2646,10 @@ Info 271  [00:13:06.000] request:
       "seq": 4,
       "type": "request"
     }
-Info 272  [00:13:07.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 273  [00:13:08.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 274  [00:13:09.000] Project '/tsconfig.json' (Configured)
-Info 275  [00:13:10.000] 	Files (251)
+Info 274  [00:13:09.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 275  [00:13:10.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 276  [00:13:11.000] Project '/tsconfig.json' (Configured)
+Info 277  [00:13:12.000] 	Files (251)
 	/index.ts SVC-1-1 "a"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;"
@@ -2898,18 +2902,18 @@ Info 275  [00:13:10.000] 	Files (251)
 	/lib/a_98.ts Text-1 "export const aa_98__0 = 0;"
 	/lib/a_99.ts Text-1 "export const aa_99__0 = 0;"
 
-Info 276  [00:13:11.000] -----------------------------------------------
-Info 277  [00:13:12.000] getCompletionData: Get current token: *
-Info 278  [00:13:13.000] getCompletionData: Is inside comment: *
-Info 279  [00:13:14.000] getCompletionData: Get previous token: *
-Info 280  [00:13:15.000] getExportInfoMap: cache miss or empty; calculating new results
-Info 281  [00:13:16.000] getExportInfoMap: done in * ms
-Info 282  [00:13:17.000] collectAutoImports: resolved 100 module specifiers, plus 0 ambient and 150 from cache (100.0% hit rate)
-Info 283  [00:13:18.000] collectAutoImports: response is incomplete
-Info 284  [00:13:19.000] collectAutoImports: *
-Info 285  [00:13:20.000] getCompletionData: Semantic work: *
-Info 286  [00:13:21.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
-Info 287  [00:13:22.000] response:
+Info 278  [00:13:13.000] -----------------------------------------------
+Info 279  [00:13:14.000] getCompletionData: Get current token: *
+Info 280  [00:13:15.000] getCompletionData: Is inside comment: *
+Info 281  [00:13:16.000] getCompletionData: Get previous token: *
+Info 282  [00:13:17.000] getExportInfoMap: cache miss or empty; calculating new results
+Info 283  [00:13:18.000] getExportInfoMap: done in * ms
+Info 284  [00:13:19.000] collectAutoImports: resolved 100 module specifiers, plus 0 ambient and 150 from cache (100.0% hit rate)
+Info 285  [00:13:20.000] collectAutoImports: response is incomplete
+Info 286  [00:13:21.000] collectAutoImports: *
+Info 287  [00:13:22.000] getCompletionData: Semantic work: *
+Info 288  [00:13:23.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
+Info 289  [00:13:24.000] response:
     {
       "response": {
         "flags": 9,
@@ -7282,7 +7286,7 @@ After request
 
 Before request
 
-Info 288  [00:13:23.000] request:
+Info 290  [00:13:25.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -7308,7 +7312,7 @@ Info 288  [00:13:23.000] request:
       "seq": 5,
       "type": "request"
     }
-Info 289  [00:13:24.000] response:
+Info 291  [00:13:26.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -7317,7 +7321,7 @@ After request
 
 Before request
 
-Info 290  [00:13:25.000] request:
+Info 292  [00:13:27.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -7329,10 +7333,10 @@ Info 290  [00:13:25.000] request:
       "seq": 6,
       "type": "request"
     }
-Info 291  [00:13:26.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 292  [00:13:27.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 293  [00:13:28.000] Project '/tsconfig.json' (Configured)
-Info 294  [00:13:29.000] 	Files (251)
+Info 293  [00:13:28.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 294  [00:13:29.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 295  [00:13:30.000] Project '/tsconfig.json' (Configured)
+Info 296  [00:13:31.000] 	Files (251)
 	/index.ts SVC-1-2 "aa"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;"
@@ -7585,12 +7589,12 @@ Info 294  [00:13:29.000] 	Files (251)
 	/lib/a_98.ts Text-1 "export const aa_98__0 = 0;"
 	/lib/a_99.ts Text-1 "export const aa_99__0 = 0;"
 
-Info 295  [00:13:30.000] -----------------------------------------------
-Info 296  [00:13:31.000] getExportInfoMap: cache hit
-Info 297  [00:13:32.000] continuePreviousIncompleteResponse: resolved 100 module specifiers, plus 0 ambient and 50 from cache (100.0% hit rate)
-Info 298  [00:13:33.000] continuePreviousIncompleteResponse: response is incomplete
-Info 299  [00:13:34.000] continuePreviousIncompleteResponse: *
-Info 300  [00:13:35.000] response:
+Info 297  [00:13:32.000] -----------------------------------------------
+Info 298  [00:13:33.000] getExportInfoMap: cache hit
+Info 299  [00:13:34.000] continuePreviousIncompleteResponse: resolved 100 module specifiers, plus 0 ambient and 50 from cache (100.0% hit rate)
+Info 300  [00:13:35.000] continuePreviousIncompleteResponse: response is incomplete
+Info 301  [00:13:36.000] continuePreviousIncompleteResponse: *
+Info 302  [00:13:37.000] response:
     {
       "response": {
         "flags": 13,
@@ -12663,7 +12667,7 @@ After request
 
 Before request
 
-Info 301  [00:13:36.000] request:
+Info 303  [00:13:38.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -12689,7 +12693,7 @@ Info 301  [00:13:36.000] request:
       "seq": 7,
       "type": "request"
     }
-Info 302  [00:13:37.000] response:
+Info 304  [00:13:39.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -12698,7 +12702,7 @@ After request
 
 Before request
 
-Info 303  [00:13:38.000] request:
+Info 305  [00:13:40.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -12710,10 +12714,10 @@ Info 303  [00:13:38.000] request:
       "seq": 8,
       "type": "request"
     }
-Info 304  [00:13:39.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 305  [00:13:40.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 4 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 306  [00:13:41.000] Project '/tsconfig.json' (Configured)
-Info 307  [00:13:42.000] 	Files (251)
+Info 306  [00:13:41.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 307  [00:13:42.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 4 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 308  [00:13:43.000] Project '/tsconfig.json' (Configured)
+Info 309  [00:13:44.000] 	Files (251)
 	/index.ts SVC-1-3 "aa_"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;"
@@ -12966,12 +12970,12 @@ Info 307  [00:13:42.000] 	Files (251)
 	/lib/a_98.ts Text-1 "export const aa_98__0 = 0;"
 	/lib/a_99.ts Text-1 "export const aa_99__0 = 0;"
 
-Info 308  [00:13:43.000] -----------------------------------------------
-Info 309  [00:13:44.000] getExportInfoMap: cache hit
-Info 310  [00:13:45.000] continuePreviousIncompleteResponse: resolved 50 module specifiers, plus 0 ambient and 0 from cache
-Info 311  [00:13:46.000] continuePreviousIncompleteResponse: response is complete
-Info 312  [00:13:47.000] continuePreviousIncompleteResponse: *
-Info 313  [00:13:48.000] response:
+Info 310  [00:13:45.000] -----------------------------------------------
+Info 311  [00:13:46.000] getExportInfoMap: cache hit
+Info 312  [00:13:47.000] continuePreviousIncompleteResponse: resolved 50 module specifiers, plus 0 ambient and 0 from cache
+Info 313  [00:13:48.000] continuePreviousIncompleteResponse: response is complete
+Info 314  [00:13:49.000] continuePreviousIncompleteResponse: *
+Info 315  [00:13:50.000] response:
     {
       "response": {
         "flags": 13,

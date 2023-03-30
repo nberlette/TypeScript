@@ -105,49 +105,51 @@ Info 34   [00:01:15.000] Search path: /
 Info 35   [00:01:16.000] For info: /main.js :: No config files found.
 Info 36   [00:01:17.000] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
 Info 37   [00:01:18.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /dev/null/inferredProject2* WatchType: Missing file
-Info 38   [00:01:19.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 39   [00:01:20.000] Project '/dev/null/inferredProject2*' (Inferred)
-Info 40   [00:01:21.000] 	Files (1)
+Info 38   [00:01:19.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /dev/null/inferredProject2* WatchType: Type roots
+Info 39   [00:01:20.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /dev/null/inferredProject2* WatchType: Type roots
+Info 40   [00:01:21.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 41   [00:01:22.000] Project '/dev/null/inferredProject2*' (Inferred)
+Info 42   [00:01:23.000] 	Files (1)
 	/main.js SVC-1-0 "var y = 1"
 
 
 	main.js
 	  Root file specified for compilation
 
-Info 41   [00:01:22.000] -----------------------------------------------
-Info 42   [00:01:23.000] `remove Project::
-Info 43   [00:01:24.000] Project '/a/tsconfig.json' (Configured)
-Info 44   [00:01:25.000] 	Files (1)
+Info 43   [00:01:24.000] -----------------------------------------------
+Info 44   [00:01:25.000] `remove Project::
+Info 45   [00:01:26.000] Project '/a/tsconfig.json' (Configured)
+Info 46   [00:01:27.000] 	Files (1)
 	/a/main.ts
 
 
 	main.ts
 	  Matched by default include pattern '**/*'
 
-Info 45   [00:01:26.000] -----------------------------------------------
-Info 46   [00:01:27.000] DirectoryWatcher:: Close:: WatchInfo: /a 1 undefined Config: /a/tsconfig.json WatchType: Wild card directory
-Info 47   [00:01:28.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a 1 undefined Config: /a/tsconfig.json WatchType: Wild card directory
-Info 48   [00:01:29.000] FileWatcher:: Close:: WatchInfo: /a/tsconfig.json 2000 undefined Project: /a/tsconfig.json WatchType: Config file
-Info 49   [00:01:30.000] DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /a/tsconfig.json WatchType: Type roots
-Info 50   [00:01:31.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /a/tsconfig.json WatchType: Type roots
-Info 51   [00:01:32.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /a/tsconfig.json WatchType: Missing file
-Info 52   [00:01:33.000] `remove Project::
-Info 53   [00:01:34.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 54   [00:01:35.000] 	Files (1)
+Info 47   [00:01:28.000] -----------------------------------------------
+Info 48   [00:01:29.000] DirectoryWatcher:: Close:: WatchInfo: /a 1 undefined Config: /a/tsconfig.json WatchType: Wild card directory
+Info 49   [00:01:30.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a 1 undefined Config: /a/tsconfig.json WatchType: Wild card directory
+Info 50   [00:01:31.000] FileWatcher:: Close:: WatchInfo: /a/tsconfig.json 2000 undefined Project: /a/tsconfig.json WatchType: Config file
+Info 51   [00:01:32.000] DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /a/tsconfig.json WatchType: Type roots
+Info 52   [00:01:33.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /a/tsconfig.json WatchType: Type roots
+Info 53   [00:01:34.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /a/tsconfig.json WatchType: Missing file
+Info 54   [00:01:35.000] `remove Project::
+Info 55   [00:01:36.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 56   [00:01:37.000] 	Files (1)
 	/a/main.js
 
 
 	main.js
 	  Root file specified for compilation
 
-Info 55   [00:01:36.000] -----------------------------------------------
-Info 56   [00:01:37.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /dev/null/inferredProject1* WatchType: Missing file
-Info 57   [00:01:38.000] FileWatcher:: Close:: WatchInfo: /a/main.ts 500 undefined WatchType: Closed Script info
-Info 58   [00:01:39.000] FileWatcher:: Close:: WatchInfo: /a/main.js 500 undefined WatchType: Closed Script info
-Info 59   [00:01:40.000] Project '/dev/null/inferredProject2*' (Inferred)
-Info 59   [00:01:41.000] 	Files (1)
+Info 57   [00:01:38.000] -----------------------------------------------
+Info 58   [00:01:39.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /dev/null/inferredProject1* WatchType: Missing file
+Info 59   [00:01:40.000] FileWatcher:: Close:: WatchInfo: /a/main.ts 500 undefined WatchType: Closed Script info
+Info 60   [00:01:41.000] FileWatcher:: Close:: WatchInfo: /a/main.js 500 undefined WatchType: Closed Script info
+Info 61   [00:01:42.000] Project '/dev/null/inferredProject2*' (Inferred)
+Info 61   [00:01:43.000] 	Files (1)
 
-Info 59   [00:01:42.000] -----------------------------------------------
-Info 59   [00:01:43.000] Open files: 
-Info 59   [00:01:44.000] 	FileName: /main.js ProjectRootPath: undefined
-Info 59   [00:01:45.000] 		Projects: /dev/null/inferredProject2*
+Info 61   [00:01:44.000] -----------------------------------------------
+Info 61   [00:01:45.000] Open files: 
+Info 61   [00:01:46.000] 	FileName: /main.js ProjectRootPath: undefined
+Info 61   [00:01:47.000] 		Projects: /dev/null/inferredProject2*

@@ -2759,9 +2759,11 @@ Info 60   [00:02:49.000] FileWatcher:: Added:: WatchInfo: /lib/a_8.ts 500 undefi
 Info 61   [00:02:50.000] FileWatcher:: Added:: WatchInfo: /lib/a_9.ts 500 undefined WatchType: Closed Script info
 Info 62   [00:02:51.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 63   [00:02:52.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 64   [00:02:53.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 65   [00:02:54.000] Project '/tsconfig.json' (Configured)
-Info 66   [00:02:55.000] 	Files (51)
+Info 64   [00:02:53.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 65   [00:02:54.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 66   [00:02:55.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 67   [00:02:56.000] Project '/tsconfig.json' (Configured)
+Info 68   [00:02:57.000] 	Files (51)
 	/index.ts SVC-1-0 ""
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;\nexport const aa_0__1 = 1;\nexport const aa_0__2 = 2;\nexport const aa_0__3 = 3;\nexport const aa_0__4 = 4;\nexport const aa_0__5 = 5;\nexport const aa_0__6 = 6;\nexport const aa_0__7 = 7;\nexport const aa_0__8 = 8;\nexport const aa_0__9 = 9;\nexport const aa_0__10 = 10;\nexport const aa_0__11 = 11;\nexport const aa_0__12 = 12;\nexport const aa_0__13 = 13;\nexport const aa_0__14 = 14;\nexport const aa_0__15 = 15;\nexport const aa_0__16 = 16;\nexport const aa_0__17 = 17;\nexport const aa_0__18 = 18;\nexport const aa_0__19 = 19;\nexport const aa_0__20 = 20;\nexport const aa_0__21 = 21;\nexport const aa_0__22 = 22;\nexport const aa_0__23 = 23;\nexport const aa_0__24 = 24;\nexport const aa_0__25 = 25;\nexport const aa_0__26 = 26;\nexport const aa_0__27 = 27;\nexport const aa_0__28 = 28;\nexport const aa_0__29 = 29;\nexport const aa_0__30 = 30;\nexport const aa_0__31 = 31;\nexport const aa_0__32 = 32;\nexport const aa_0__33 = 33;\nexport const aa_0__34 = 34;\nexport const aa_0__35 = 35;\nexport const aa_0__36 = 36;\nexport const aa_0__37 = 37;\nexport const aa_0__38 = 38;\nexport const aa_0__39 = 39;\nexport const aa_0__40 = 40;\nexport const aa_0__41 = 41;\nexport const aa_0__42 = 42;\nexport const aa_0__43 = 43;\nexport const aa_0__44 = 44;\nexport const aa_0__45 = 45;\nexport const aa_0__46 = 46;\nexport const aa_0__47 = 47;\nexport const aa_0__48 = 48;\nexport const aa_0__49 = 49;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;\nexport const aa_1__1 = 1;\nexport const aa_1__2 = 2;\nexport const aa_1__3 = 3;\nexport const aa_1__4 = 4;\nexport const aa_1__5 = 5;\nexport const aa_1__6 = 6;\nexport const aa_1__7 = 7;\nexport const aa_1__8 = 8;\nexport const aa_1__9 = 9;\nexport const aa_1__10 = 10;\nexport const aa_1__11 = 11;\nexport const aa_1__12 = 12;\nexport const aa_1__13 = 13;\nexport const aa_1__14 = 14;\nexport const aa_1__15 = 15;\nexport const aa_1__16 = 16;\nexport const aa_1__17 = 17;\nexport const aa_1__18 = 18;\nexport const aa_1__19 = 19;\nexport const aa_1__20 = 20;\nexport const aa_1__21 = 21;\nexport const aa_1__22 = 22;\nexport const aa_1__23 = 23;\nexport const aa_1__24 = 24;\nexport const aa_1__25 = 25;\nexport const aa_1__26 = 26;\nexport const aa_1__27 = 27;\nexport const aa_1__28 = 28;\nexport const aa_1__29 = 29;\nexport const aa_1__30 = 30;\nexport const aa_1__31 = 31;\nexport const aa_1__32 = 32;\nexport const aa_1__33 = 33;\nexport const aa_1__34 = 34;\nexport const aa_1__35 = 35;\nexport const aa_1__36 = 36;\nexport const aa_1__37 = 37;\nexport const aa_1__38 = 38;\nexport const aa_1__39 = 39;\nexport const aa_1__40 = 40;\nexport const aa_1__41 = 41;\nexport const aa_1__42 = 42;\nexport const aa_1__43 = 43;\nexport const aa_1__44 = 44;\nexport const aa_1__45 = 45;\nexport const aa_1__46 = 46;\nexport const aa_1__47 = 47;\nexport const aa_1__48 = 48;\nexport const aa_1__49 = 49;"
@@ -2918,15 +2920,15 @@ Info 66   [00:02:55.000] 	Files (51)
 	lib/a_9.ts
 	  Matched by default include pattern '**/*'
 
-Info 67   [00:02:56.000] -----------------------------------------------
-Info 68   [00:02:57.000] Project '/tsconfig.json' (Configured)
-Info 68   [00:02:58.000] 	Files (51)
+Info 69   [00:02:58.000] -----------------------------------------------
+Info 70   [00:02:59.000] Project '/tsconfig.json' (Configured)
+Info 70   [00:03:00.000] 	Files (51)
 
-Info 68   [00:02:59.000] -----------------------------------------------
-Info 68   [00:03:00.000] Open files: 
-Info 68   [00:03:01.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 68   [00:03:02.000] 		Projects: /tsconfig.json
-Info 68   [00:03:03.000] response:
+Info 70   [00:03:01.000] -----------------------------------------------
+Info 70   [00:03:02.000] Open files: 
+Info 70   [00:03:03.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 70   [00:03:04.000] 		Projects: /tsconfig.json
+Info 70   [00:03:05.000] response:
     {
       "responseRequired": false
     }
@@ -2934,6 +2936,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::
@@ -3046,7 +3050,7 @@ FsWatchesRecursive::
 
 Before request
 
-Info 69   [00:03:04.000] request:
+Info 71   [00:03:06.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -3072,7 +3076,7 @@ Info 69   [00:03:04.000] request:
       "seq": 3,
       "type": "request"
     }
-Info 70   [00:03:05.000] response:
+Info 72   [00:03:07.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -3081,7 +3085,7 @@ After request
 
 Before request
 
-Info 71   [00:03:06.000] request:
+Info 73   [00:03:08.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -3092,10 +3096,10 @@ Info 71   [00:03:06.000] request:
       "seq": 4,
       "type": "request"
     }
-Info 72   [00:03:07.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 73   [00:03:08.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 74   [00:03:09.000] Project '/tsconfig.json' (Configured)
-Info 75   [00:03:10.000] 	Files (51)
+Info 74   [00:03:09.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 75   [00:03:10.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 76   [00:03:11.000] Project '/tsconfig.json' (Configured)
+Info 77   [00:03:12.000] 	Files (51)
 	/index.ts SVC-1-1 "a"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;\nexport const aa_0__1 = 1;\nexport const aa_0__2 = 2;\nexport const aa_0__3 = 3;\nexport const aa_0__4 = 4;\nexport const aa_0__5 = 5;\nexport const aa_0__6 = 6;\nexport const aa_0__7 = 7;\nexport const aa_0__8 = 8;\nexport const aa_0__9 = 9;\nexport const aa_0__10 = 10;\nexport const aa_0__11 = 11;\nexport const aa_0__12 = 12;\nexport const aa_0__13 = 13;\nexport const aa_0__14 = 14;\nexport const aa_0__15 = 15;\nexport const aa_0__16 = 16;\nexport const aa_0__17 = 17;\nexport const aa_0__18 = 18;\nexport const aa_0__19 = 19;\nexport const aa_0__20 = 20;\nexport const aa_0__21 = 21;\nexport const aa_0__22 = 22;\nexport const aa_0__23 = 23;\nexport const aa_0__24 = 24;\nexport const aa_0__25 = 25;\nexport const aa_0__26 = 26;\nexport const aa_0__27 = 27;\nexport const aa_0__28 = 28;\nexport const aa_0__29 = 29;\nexport const aa_0__30 = 30;\nexport const aa_0__31 = 31;\nexport const aa_0__32 = 32;\nexport const aa_0__33 = 33;\nexport const aa_0__34 = 34;\nexport const aa_0__35 = 35;\nexport const aa_0__36 = 36;\nexport const aa_0__37 = 37;\nexport const aa_0__38 = 38;\nexport const aa_0__39 = 39;\nexport const aa_0__40 = 40;\nexport const aa_0__41 = 41;\nexport const aa_0__42 = 42;\nexport const aa_0__43 = 43;\nexport const aa_0__44 = 44;\nexport const aa_0__45 = 45;\nexport const aa_0__46 = 46;\nexport const aa_0__47 = 47;\nexport const aa_0__48 = 48;\nexport const aa_0__49 = 49;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;\nexport const aa_1__1 = 1;\nexport const aa_1__2 = 2;\nexport const aa_1__3 = 3;\nexport const aa_1__4 = 4;\nexport const aa_1__5 = 5;\nexport const aa_1__6 = 6;\nexport const aa_1__7 = 7;\nexport const aa_1__8 = 8;\nexport const aa_1__9 = 9;\nexport const aa_1__10 = 10;\nexport const aa_1__11 = 11;\nexport const aa_1__12 = 12;\nexport const aa_1__13 = 13;\nexport const aa_1__14 = 14;\nexport const aa_1__15 = 15;\nexport const aa_1__16 = 16;\nexport const aa_1__17 = 17;\nexport const aa_1__18 = 18;\nexport const aa_1__19 = 19;\nexport const aa_1__20 = 20;\nexport const aa_1__21 = 21;\nexport const aa_1__22 = 22;\nexport const aa_1__23 = 23;\nexport const aa_1__24 = 24;\nexport const aa_1__25 = 25;\nexport const aa_1__26 = 26;\nexport const aa_1__27 = 27;\nexport const aa_1__28 = 28;\nexport const aa_1__29 = 29;\nexport const aa_1__30 = 30;\nexport const aa_1__31 = 31;\nexport const aa_1__32 = 32;\nexport const aa_1__33 = 33;\nexport const aa_1__34 = 34;\nexport const aa_1__35 = 35;\nexport const aa_1__36 = 36;\nexport const aa_1__37 = 37;\nexport const aa_1__38 = 38;\nexport const aa_1__39 = 39;\nexport const aa_1__40 = 40;\nexport const aa_1__41 = 41;\nexport const aa_1__42 = 42;\nexport const aa_1__43 = 43;\nexport const aa_1__44 = 44;\nexport const aa_1__45 = 45;\nexport const aa_1__46 = 46;\nexport const aa_1__47 = 47;\nexport const aa_1__48 = 48;\nexport const aa_1__49 = 49;"
@@ -3148,18 +3152,18 @@ Info 75   [00:03:10.000] 	Files (51)
 	/lib/a_8.ts Text-1 "export const aa_8__0 = 0;\nexport const aa_8__1 = 1;\nexport const aa_8__2 = 2;\nexport const aa_8__3 = 3;\nexport const aa_8__4 = 4;\nexport const aa_8__5 = 5;\nexport const aa_8__6 = 6;\nexport const aa_8__7 = 7;\nexport const aa_8__8 = 8;\nexport const aa_8__9 = 9;\nexport const aa_8__10 = 10;\nexport const aa_8__11 = 11;\nexport const aa_8__12 = 12;\nexport const aa_8__13 = 13;\nexport const aa_8__14 = 14;\nexport const aa_8__15 = 15;\nexport const aa_8__16 = 16;\nexport const aa_8__17 = 17;\nexport const aa_8__18 = 18;\nexport const aa_8__19 = 19;\nexport const aa_8__20 = 20;\nexport const aa_8__21 = 21;\nexport const aa_8__22 = 22;\nexport const aa_8__23 = 23;\nexport const aa_8__24 = 24;\nexport const aa_8__25 = 25;\nexport const aa_8__26 = 26;\nexport const aa_8__27 = 27;\nexport const aa_8__28 = 28;\nexport const aa_8__29 = 29;\nexport const aa_8__30 = 30;\nexport const aa_8__31 = 31;\nexport const aa_8__32 = 32;\nexport const aa_8__33 = 33;\nexport const aa_8__34 = 34;\nexport const aa_8__35 = 35;\nexport const aa_8__36 = 36;\nexport const aa_8__37 = 37;\nexport const aa_8__38 = 38;\nexport const aa_8__39 = 39;\nexport const aa_8__40 = 40;\nexport const aa_8__41 = 41;\nexport const aa_8__42 = 42;\nexport const aa_8__43 = 43;\nexport const aa_8__44 = 44;\nexport const aa_8__45 = 45;\nexport const aa_8__46 = 46;\nexport const aa_8__47 = 47;\nexport const aa_8__48 = 48;\nexport const aa_8__49 = 49;"
 	/lib/a_9.ts Text-1 "export const aa_9__0 = 0;\nexport const aa_9__1 = 1;\nexport const aa_9__2 = 2;\nexport const aa_9__3 = 3;\nexport const aa_9__4 = 4;\nexport const aa_9__5 = 5;\nexport const aa_9__6 = 6;\nexport const aa_9__7 = 7;\nexport const aa_9__8 = 8;\nexport const aa_9__9 = 9;\nexport const aa_9__10 = 10;\nexport const aa_9__11 = 11;\nexport const aa_9__12 = 12;\nexport const aa_9__13 = 13;\nexport const aa_9__14 = 14;\nexport const aa_9__15 = 15;\nexport const aa_9__16 = 16;\nexport const aa_9__17 = 17;\nexport const aa_9__18 = 18;\nexport const aa_9__19 = 19;\nexport const aa_9__20 = 20;\nexport const aa_9__21 = 21;\nexport const aa_9__22 = 22;\nexport const aa_9__23 = 23;\nexport const aa_9__24 = 24;\nexport const aa_9__25 = 25;\nexport const aa_9__26 = 26;\nexport const aa_9__27 = 27;\nexport const aa_9__28 = 28;\nexport const aa_9__29 = 29;\nexport const aa_9__30 = 30;\nexport const aa_9__31 = 31;\nexport const aa_9__32 = 32;\nexport const aa_9__33 = 33;\nexport const aa_9__34 = 34;\nexport const aa_9__35 = 35;\nexport const aa_9__36 = 36;\nexport const aa_9__37 = 37;\nexport const aa_9__38 = 38;\nexport const aa_9__39 = 39;\nexport const aa_9__40 = 40;\nexport const aa_9__41 = 41;\nexport const aa_9__42 = 42;\nexport const aa_9__43 = 43;\nexport const aa_9__44 = 44;\nexport const aa_9__45 = 45;\nexport const aa_9__46 = 46;\nexport const aa_9__47 = 47;\nexport const aa_9__48 = 48;\nexport const aa_9__49 = 49;"
 
-Info 76   [00:03:11.000] -----------------------------------------------
-Info 77   [00:03:12.000] getCompletionData: Get current token: *
-Info 78   [00:03:13.000] getCompletionData: Is inside comment: *
-Info 79   [00:03:14.000] getCompletionData: Get previous token: *
-Info 80   [00:03:15.000] getExportInfoMap: cache miss or empty; calculating new results
-Info 81   [00:03:16.000] getExportInfoMap: done in * ms
-Info 82   [00:03:17.000] collectAutoImports: resolved 50 module specifiers, plus 0 ambient and 2450 from cache
-Info 83   [00:03:18.000] collectAutoImports: response is complete
-Info 84   [00:03:19.000] collectAutoImports: *
-Info 85   [00:03:20.000] getCompletionData: Semantic work: *
-Info 86   [00:03:21.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
-Info 87   [00:03:22.000] response:
+Info 78   [00:03:13.000] -----------------------------------------------
+Info 79   [00:03:14.000] getCompletionData: Get current token: *
+Info 80   [00:03:15.000] getCompletionData: Is inside comment: *
+Info 81   [00:03:16.000] getCompletionData: Get previous token: *
+Info 82   [00:03:17.000] getExportInfoMap: cache miss or empty; calculating new results
+Info 83   [00:03:18.000] getExportInfoMap: done in * ms
+Info 84   [00:03:19.000] collectAutoImports: resolved 50 module specifiers, plus 0 ambient and 2450 from cache
+Info 85   [00:03:20.000] collectAutoImports: response is complete
+Info 86   [00:03:21.000] collectAutoImports: *
+Info 87   [00:03:22.000] getCompletionData: Semantic work: *
+Info 88   [00:03:23.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
+Info 89   [00:03:24.000] response:
     {
       "response": {
         "flags": 9,

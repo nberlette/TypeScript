@@ -54,9 +54,11 @@ Info 5    [00:00:24.000] DirectoryWatcher:: Added:: WatchInfo: /a 1 undefined Pr
 Info 6    [00:00:25.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /a 1 undefined Project: project WatchType: Failed Lookup Locations
 Info 7    [00:00:26.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: project WatchType: Failed Lookup Locations
 Info 8    [00:00:27.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: project WatchType: Failed Lookup Locations
-Info 9    [00:00:28.000] Finishing updateGraphWorker: Project: project Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 10   [00:00:29.000] Project 'project' (External)
-Info 11   [00:00:30.000] 	Files (3)
+Info 9    [00:00:28.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: project WatchType: Type roots
+Info 10   [00:00:29.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: project WatchType: Type roots
+Info 11   [00:00:30.000] Finishing updateGraphWorker: Project: project Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 12   [00:00:31.000] Project 'project' (External)
+Info 13   [00:00:32.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/a/b/f1.js Text-1 "export let x = 5; import { s } from \"s\""
 	/a/b/constructor.js Text-1 "const x = 10;"
@@ -69,12 +71,14 @@ Info 11   [00:00:30.000] 	Files (3)
 	a/b/constructor.js
 	  Root file specified for compilation
 
-Info 12   [00:00:31.000] -----------------------------------------------
+Info 14   [00:00:33.000] -----------------------------------------------
 Timeout callback:: count: 0
 Immedidate callback:: count: 0
 
 PolledWatches::
 /node_modules: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::

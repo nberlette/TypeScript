@@ -32,9 +32,11 @@ Info 5    [00:00:18.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /a/
 Info 6    [00:00:19.000] DirectoryWatcher:: Added:: WatchInfo: /a 1 undefined Project: p WatchType: Failed Lookup Locations
 Info 7    [00:00:20.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /a 1 undefined Project: p WatchType: Failed Lookup Locations
 Info 8    [00:00:21.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: p WatchType: Missing file
-Info 9    [00:00:22.000] Finishing updateGraphWorker: Project: p Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 10   [00:00:23.000] Project 'p' (External)
-Info 11   [00:00:24.000] 	Files (2)
+Info 9    [00:00:22.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: p WatchType: Type roots
+Info 10   [00:00:23.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: p WatchType: Type roots
+Info 11   [00:00:24.000] Finishing updateGraphWorker: Project: p Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 12   [00:00:25.000] Project 'p' (External)
+Info 13   [00:00:26.000] 	Files (2)
 	/a/node_modules/tslib/index.d.ts Text-1 ""
 	/a/app.ts Text-1 "export async function foo() { return 100; }"
 
@@ -44,8 +46,8 @@ Info 11   [00:00:24.000] 	Files (2)
 	a/app.ts
 	  Root file specified for compilation
 
-Info 12   [00:00:25.000] -----------------------------------------------
-Info 13   [00:00:26.000] response:
+Info 14   [00:00:27.000] -----------------------------------------------
+Info 15   [00:00:28.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -54,6 +56,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::

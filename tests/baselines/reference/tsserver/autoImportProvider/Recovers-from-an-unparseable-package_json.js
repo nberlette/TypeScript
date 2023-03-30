@@ -43,25 +43,27 @@ Info 7    [00:00:26.000] DirectoryWatcher:: Added:: WatchInfo:  1 undefined Conf
 Info 8    [00:00:27.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo:  1 undefined Config: /tsconfig.json WatchType: Wild card directory
 Info 9    [00:00:28.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 10   [00:00:29.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 11   [00:00:30.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 12   [00:00:31.000] Project '/tsconfig.json' (Configured)
-Info 13   [00:00:32.000] 	Files (1)
+Info 11   [00:00:30.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 12   [00:00:31.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 13   [00:00:32.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 14   [00:00:33.000] Project '/tsconfig.json' (Configured)
+Info 15   [00:00:34.000] 	Files (1)
 	/index.ts SVC-1-0 ""
 
 
 	index.ts
 	  Matched by default include pattern '**/*'
 
-Info 14   [00:00:33.000] -----------------------------------------------
-Info 15   [00:00:34.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
-Info 16   [00:00:35.000] Project '/tsconfig.json' (Configured)
-Info 16   [00:00:36.000] 	Files (1)
+Info 16   [00:00:35.000] -----------------------------------------------
+Info 17   [00:00:36.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
+Info 18   [00:00:37.000] Project '/tsconfig.json' (Configured)
+Info 18   [00:00:38.000] 	Files (1)
 
-Info 16   [00:00:37.000] -----------------------------------------------
-Info 16   [00:00:38.000] Open files: 
-Info 16   [00:00:39.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 16   [00:00:40.000] 		Projects: /tsconfig.json
-Info 16   [00:00:41.000] response:
+Info 18   [00:00:39.000] -----------------------------------------------
+Info 18   [00:00:40.000] Open files: 
+Info 18   [00:00:41.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 18   [00:00:42.000] 		Projects: /tsconfig.json
+Info 18   [00:00:43.000] response:
     {
       "responseRequired": false
     }
@@ -69,6 +71,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::
@@ -81,19 +85,19 @@ FsWatchesRecursive::
 /: *new*
   {}
 
-Info 17   [00:00:45.000] FileWatcher:: Triggered with /package.json 1:: WatchInfo: /package.json 250 undefined WatchType: package.json file
-Info 18   [00:00:46.000] Elapsed:: *ms FileWatcher:: Triggered with /package.json 1:: WatchInfo: /package.json 250 undefined WatchType: package.json file
-Info 19   [00:00:47.000] AutoImportProviderProject: found 1 root files in 1 dependencies in * ms
-Info 20   [00:00:48.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
-Info 21   [00:00:49.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
-Info 22   [00:00:50.000] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
-Info 23   [00:00:51.000] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 24   [00:00:52.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
-Info 25   [00:00:53.000] 	Files (1)
+Info 19   [00:00:47.000] FileWatcher:: Triggered with /package.json 1:: WatchInfo: /package.json 250 undefined WatchType: package.json file
+Info 20   [00:00:48.000] Elapsed:: *ms FileWatcher:: Triggered with /package.json 1:: WatchInfo: /package.json 250 undefined WatchType: package.json file
+Info 21   [00:00:49.000] AutoImportProviderProject: found 1 root files in 1 dependencies in * ms
+Info 22   [00:00:50.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+Info 23   [00:00:51.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+Info 24   [00:00:52.000] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 25   [00:00:53.000] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 26   [00:00:54.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 27   [00:00:55.000] 	Files (1)
 	/node_modules/@angular/forms/forms.d.ts Text-1 "export declare class PatternValidator {}"
 
 
 	node_modules/@angular/forms/forms.d.ts
 	  Root file specified for compilation
 
-Info 26   [00:00:54.000] -----------------------------------------------
+Info 28   [00:00:56.000] -----------------------------------------------

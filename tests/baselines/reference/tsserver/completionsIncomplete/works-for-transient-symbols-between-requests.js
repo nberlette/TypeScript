@@ -567,9 +567,11 @@ Info 111  [00:05:24.000] FileWatcher:: Added:: WatchInfo: /lib/a_99.ts 500 undef
 Info 112  [00:05:25.000] FileWatcher:: Added:: WatchInfo: /lib/foo/constants.d.ts 500 undefined WatchType: Closed Script info
 Info 113  [00:05:26.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 114  [00:05:27.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 115  [00:05:28.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 116  [00:05:29.000] Project '/tsconfig.json' (Configured)
-Info 117  [00:05:30.000] 	Files (102)
+Info 115  [00:05:28.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 116  [00:05:29.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 117  [00:05:30.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 118  [00:05:31.000] Project '/tsconfig.json' (Configured)
+Info 119  [00:05:32.000] 	Files (102)
 	/index.ts SVC-1-0 ""
 	/lib/a_0.ts Text-1 "export const S0_0 = 0;"
 	/lib/a_1.ts Text-1 "export const S1_0 = 0;"
@@ -879,15 +881,15 @@ Info 117  [00:05:30.000] 	Files (102)
 	lib/foo/constants.d.ts
 	  Matched by default include pattern '**/*'
 
-Info 118  [00:05:31.000] -----------------------------------------------
-Info 119  [00:05:32.000] Project '/tsconfig.json' (Configured)
-Info 119  [00:05:33.000] 	Files (102)
+Info 120  [00:05:33.000] -----------------------------------------------
+Info 121  [00:05:34.000] Project '/tsconfig.json' (Configured)
+Info 121  [00:05:35.000] 	Files (102)
 
-Info 119  [00:05:34.000] -----------------------------------------------
-Info 119  [00:05:35.000] Open files: 
-Info 119  [00:05:36.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 119  [00:05:37.000] 		Projects: /tsconfig.json
-Info 119  [00:05:38.000] response:
+Info 121  [00:05:36.000] -----------------------------------------------
+Info 121  [00:05:37.000] Open files: 
+Info 121  [00:05:38.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 121  [00:05:39.000] 		Projects: /tsconfig.json
+Info 121  [00:05:40.000] response:
     {
       "responseRequired": false
     }
@@ -895,6 +897,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::
@@ -1109,7 +1113,7 @@ FsWatchesRecursive::
 
 Before request
 
-Info 120  [00:05:39.000] request:
+Info 122  [00:05:41.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -1135,7 +1139,7 @@ Info 120  [00:05:39.000] request:
       "seq": 3,
       "type": "request"
     }
-Info 121  [00:05:40.000] response:
+Info 123  [00:05:42.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -1144,7 +1148,7 @@ After request
 
 Before request
 
-Info 122  [00:05:41.000] request:
+Info 124  [00:05:43.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -1155,10 +1159,10 @@ Info 122  [00:05:41.000] request:
       "seq": 4,
       "type": "request"
     }
-Info 123  [00:05:42.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 124  [00:05:43.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 125  [00:05:44.000] Project '/tsconfig.json' (Configured)
-Info 126  [00:05:45.000] 	Files (102)
+Info 125  [00:05:44.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 126  [00:05:45.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 127  [00:05:46.000] Project '/tsconfig.json' (Configured)
+Info 128  [00:05:47.000] 	Files (102)
 	/index.ts SVC-1-1 "s"
 	/lib/a_0.ts Text-1 "export const S0_0 = 0;"
 	/lib/a_1.ts Text-1 "export const S1_0 = 0;"
@@ -1262,18 +1266,18 @@ Info 126  [00:05:45.000] 	Files (102)
 	/lib/a_99.ts Text-1 "export const S99_0 = 0;"
 	/lib/foo/constants.d.ts Text-1 "\n                    type Signals = \"SIGINT\" | \"SIGABRT\";\n                    declare const exp: {} & { [K in Signals]: K };\n                    export = exp;"
 
-Info 127  [00:05:46.000] -----------------------------------------------
-Info 128  [00:05:47.000] getCompletionData: Get current token: *
-Info 129  [00:05:48.000] getCompletionData: Is inside comment: *
-Info 130  [00:05:49.000] getCompletionData: Get previous token: *
-Info 131  [00:05:50.000] getExportInfoMap: cache miss or empty; calculating new results
-Info 132  [00:05:51.000] getExportInfoMap: done in * ms
-Info 133  [00:05:52.000] collectAutoImports: resolved 100 module specifiers, plus 0 ambient and 3 from cache (100.0% hit rate)
-Info 134  [00:05:53.000] collectAutoImports: response is incomplete
-Info 135  [00:05:54.000] collectAutoImports: *
-Info 136  [00:05:55.000] getCompletionData: Semantic work: *
-Info 137  [00:05:56.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
-Info 138  [00:05:57.000] response:
+Info 129  [00:05:48.000] -----------------------------------------------
+Info 130  [00:05:49.000] getCompletionData: Get current token: *
+Info 131  [00:05:50.000] getCompletionData: Is inside comment: *
+Info 132  [00:05:51.000] getCompletionData: Get previous token: *
+Info 133  [00:05:52.000] getExportInfoMap: cache miss or empty; calculating new results
+Info 134  [00:05:53.000] getExportInfoMap: done in * ms
+Info 135  [00:05:54.000] collectAutoImports: resolved 100 module specifiers, plus 0 ambient and 3 from cache (100.0% hit rate)
+Info 136  [00:05:55.000] collectAutoImports: response is incomplete
+Info 137  [00:05:56.000] collectAutoImports: *
+Info 138  [00:05:57.000] getCompletionData: Semantic work: *
+Info 139  [00:05:58.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
+Info 140  [00:05:59.000] response:
     {
       "response": {
         "flags": 9,
@@ -3735,7 +3739,7 @@ After request
 
 Before request
 
-Info 139  [00:05:58.000] request:
+Info 141  [00:06:00.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -3761,7 +3765,7 @@ Info 139  [00:05:58.000] request:
       "seq": 5,
       "type": "request"
     }
-Info 140  [00:05:59.000] response:
+Info 142  [00:06:01.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -3770,7 +3774,7 @@ After request
 
 Before request
 
-Info 141  [00:06:00.000] request:
+Info 143  [00:06:02.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -3782,10 +3786,10 @@ Info 141  [00:06:00.000] request:
       "seq": 6,
       "type": "request"
     }
-Info 142  [00:06:01.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 143  [00:06:02.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 144  [00:06:03.000] Project '/tsconfig.json' (Configured)
-Info 145  [00:06:04.000] 	Files (102)
+Info 144  [00:06:03.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 145  [00:06:04.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 146  [00:06:05.000] Project '/tsconfig.json' (Configured)
+Info 147  [00:06:06.000] 	Files (102)
 	/index.ts SVC-1-2 "si"
 	/lib/a_0.ts Text-1 "export const S0_0 = 0;"
 	/lib/a_1.ts Text-1 "export const S1_0 = 0;"
@@ -3889,12 +3893,12 @@ Info 145  [00:06:04.000] 	Files (102)
 	/lib/a_99.ts Text-1 "export const S99_0 = 0;"
 	/lib/foo/constants.d.ts Text-1 "\n                    type Signals = \"SIGINT\" | \"SIGABRT\";\n                    declare const exp: {} & { [K in Signals]: K };\n                    export = exp;"
 
-Info 146  [00:06:05.000] -----------------------------------------------
-Info 147  [00:06:06.000] getExportInfoMap: cache hit
-Info 148  [00:06:07.000] continuePreviousIncompleteResponse: resolved 1 module specifiers, plus 0 ambient and 1 from cache
-Info 149  [00:06:08.000] continuePreviousIncompleteResponse: response is complete
-Info 150  [00:06:09.000] continuePreviousIncompleteResponse: *
-Info 151  [00:06:10.000] response:
+Info 148  [00:06:07.000] -----------------------------------------------
+Info 149  [00:06:08.000] getExportInfoMap: cache hit
+Info 150  [00:06:09.000] continuePreviousIncompleteResponse: resolved 1 module specifiers, plus 0 ambient and 1 from cache
+Info 151  [00:06:10.000] continuePreviousIncompleteResponse: response is complete
+Info 152  [00:06:11.000] continuePreviousIncompleteResponse: *
+Info 153  [00:06:12.000] response:
     {
       "response": {
         "flags": 13,

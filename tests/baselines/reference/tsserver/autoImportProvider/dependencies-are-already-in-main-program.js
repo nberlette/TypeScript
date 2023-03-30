@@ -48,9 +48,11 @@ Info 12   [00:00:31.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 u
 Info 13   [00:00:32.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /tsconfig.json WatchType: Failed Lookup Locations
 Info 14   [00:00:33.000] FileWatcher:: Added:: WatchInfo: /node_modules/@angular/forms/package.json 2000 undefined Project: /tsconfig.json WatchType: File location affecting resolution
 Info 15   [00:00:34.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 16   [00:00:35.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 17   [00:00:36.000] Project '/tsconfig.json' (Configured)
-Info 18   [00:00:37.000] 	Files (2)
+Info 16   [00:00:35.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 17   [00:00:36.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 18   [00:00:37.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 19   [00:00:38.000] Project '/tsconfig.json' (Configured)
+Info 20   [00:00:39.000] 	Files (2)
 	/node_modules/@angular/forms/forms.d.ts Text-1 "export declare class PatternValidator {}"
 	/index.ts SVC-1-0 "import '@angular/forms';"
 
@@ -60,16 +62,16 @@ Info 18   [00:00:37.000] 	Files (2)
 	index.ts
 	  Matched by default include pattern '**/*'
 
-Info 19   [00:00:38.000] -----------------------------------------------
-Info 20   [00:00:39.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
-Info 21   [00:00:40.000] Project '/tsconfig.json' (Configured)
-Info 21   [00:00:41.000] 	Files (2)
+Info 21   [00:00:40.000] -----------------------------------------------
+Info 22   [00:00:41.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
+Info 23   [00:00:42.000] Project '/tsconfig.json' (Configured)
+Info 23   [00:00:43.000] 	Files (2)
 
-Info 21   [00:00:42.000] -----------------------------------------------
-Info 21   [00:00:43.000] Open files: 
-Info 21   [00:00:44.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 21   [00:00:45.000] 		Projects: /tsconfig.json
-Info 21   [00:00:46.000] response:
+Info 23   [00:00:44.000] -----------------------------------------------
+Info 23   [00:00:45.000] Open files: 
+Info 23   [00:00:46.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 23   [00:00:47.000] 		Projects: /tsconfig.json
+Info 23   [00:00:48.000] response:
     {
       "responseRequired": false
     }
@@ -77,6 +79,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::

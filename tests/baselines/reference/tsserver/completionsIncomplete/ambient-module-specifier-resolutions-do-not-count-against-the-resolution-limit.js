@@ -1459,9 +1459,11 @@ Info 210  [00:10:19.000] FileWatcher:: Added:: WatchInfo: /lib/ambient_98.ts 500
 Info 211  [00:10:20.000] FileWatcher:: Added:: WatchInfo: /lib/ambient_99.ts 500 undefined WatchType: Closed Script info
 Info 212  [00:10:21.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 213  [00:10:22.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 214  [00:10:23.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 215  [00:10:24.000] Project '/tsconfig.json' (Configured)
-Info 216  [00:10:25.000] 	Files (201)
+Info 214  [00:10:23.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 215  [00:10:24.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 216  [00:10:25.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 217  [00:10:26.000] Project '/tsconfig.json' (Configured)
+Info 218  [00:10:27.000] 	Files (201)
 	/index.ts SVC-1-0 ""
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;\nexport const aa_0__1 = 1;\nexport const aa_0__2 = 2;\nexport const aa_0__3 = 3;\nexport const aa_0__4 = 4;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;\nexport const aa_1__1 = 1;\nexport const aa_1__2 = 2;\nexport const aa_1__3 = 3;\nexport const aa_1__4 = 4;"
@@ -2068,15 +2070,15 @@ Info 216  [00:10:25.000] 	Files (201)
 	lib/ambient_99.ts
 	  Matched by default include pattern '**/*'
 
-Info 217  [00:10:26.000] -----------------------------------------------
-Info 218  [00:10:27.000] Project '/tsconfig.json' (Configured)
-Info 218  [00:10:28.000] 	Files (201)
+Info 219  [00:10:28.000] -----------------------------------------------
+Info 220  [00:10:29.000] Project '/tsconfig.json' (Configured)
+Info 220  [00:10:30.000] 	Files (201)
 
-Info 218  [00:10:29.000] -----------------------------------------------
-Info 218  [00:10:30.000] Open files: 
-Info 218  [00:10:31.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 218  [00:10:32.000] 		Projects: /tsconfig.json
-Info 218  [00:10:33.000] response:
+Info 220  [00:10:31.000] -----------------------------------------------
+Info 220  [00:10:32.000] Open files: 
+Info 220  [00:10:33.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 220  [00:10:34.000] 		Projects: /tsconfig.json
+Info 220  [00:10:35.000] response:
     {
       "responseRequired": false
     }
@@ -2084,6 +2086,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::
@@ -2496,7 +2500,7 @@ FsWatchesRecursive::
 
 Before request
 
-Info 219  [00:10:34.000] request:
+Info 221  [00:10:36.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -2522,7 +2526,7 @@ Info 219  [00:10:34.000] request:
       "seq": 3,
       "type": "request"
     }
-Info 220  [00:10:35.000] response:
+Info 222  [00:10:37.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -2531,7 +2535,7 @@ After request
 
 Before request
 
-Info 221  [00:10:36.000] request:
+Info 223  [00:10:38.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -2542,10 +2546,10 @@ Info 221  [00:10:36.000] request:
       "seq": 4,
       "type": "request"
     }
-Info 222  [00:10:37.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 223  [00:10:38.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 224  [00:10:39.000] Project '/tsconfig.json' (Configured)
-Info 225  [00:10:40.000] 	Files (201)
+Info 224  [00:10:39.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 225  [00:10:40.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 226  [00:10:41.000] Project '/tsconfig.json' (Configured)
+Info 227  [00:10:42.000] 	Files (201)
 	/index.ts SVC-1-1 "a"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;\nexport const aa_0__1 = 1;\nexport const aa_0__2 = 2;\nexport const aa_0__3 = 3;\nexport const aa_0__4 = 4;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;\nexport const aa_1__1 = 1;\nexport const aa_1__2 = 2;\nexport const aa_1__3 = 3;\nexport const aa_1__4 = 4;"
@@ -2748,18 +2752,18 @@ Info 225  [00:10:40.000] 	Files (201)
 	/lib/ambient_98.ts Text-1 "declare module \"ambient_98\" { export const aa_98 = 98; }"
 	/lib/ambient_99.ts Text-1 "declare module \"ambient_99\" { export const aa_99 = 99; }"
 
-Info 226  [00:10:41.000] -----------------------------------------------
-Info 227  [00:10:42.000] getCompletionData: Get current token: *
-Info 228  [00:10:43.000] getCompletionData: Is inside comment: *
-Info 229  [00:10:44.000] getCompletionData: Get previous token: *
-Info 230  [00:10:45.000] getExportInfoMap: cache miss or empty; calculating new results
-Info 231  [00:10:46.000] getExportInfoMap: done in * ms
-Info 232  [00:10:47.000] collectAutoImports: resolved 100 module specifiers, plus 100 ambient and 400 from cache (10000.0% hit rate)
-Info 233  [00:10:48.000] collectAutoImports: response is complete
-Info 234  [00:10:49.000] collectAutoImports: *
-Info 235  [00:10:50.000] getCompletionData: Semantic work: *
-Info 236  [00:10:51.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
-Info 237  [00:10:52.000] response:
+Info 228  [00:10:43.000] -----------------------------------------------
+Info 229  [00:10:44.000] getCompletionData: Get current token: *
+Info 230  [00:10:45.000] getCompletionData: Is inside comment: *
+Info 231  [00:10:46.000] getCompletionData: Get previous token: *
+Info 232  [00:10:47.000] getExportInfoMap: cache miss or empty; calculating new results
+Info 233  [00:10:48.000] getExportInfoMap: done in * ms
+Info 234  [00:10:49.000] collectAutoImports: resolved 100 module specifiers, plus 100 ambient and 400 from cache (10000.0% hit rate)
+Info 235  [00:10:50.000] collectAutoImports: response is complete
+Info 236  [00:10:51.000] collectAutoImports: *
+Info 237  [00:10:52.000] getCompletionData: Semantic work: *
+Info 238  [00:10:53.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
+Info 239  [00:10:54.000] response:
     {
       "response": {
         "flags": 9,

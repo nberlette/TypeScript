@@ -54,33 +54,35 @@ Info 18   [00:00:37.000] DirectoryWatcher:: Added:: WatchInfo:  1 undefined Conf
 Info 19   [00:00:38.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo:  1 undefined Config: /tsconfig.json WatchType: Wild card directory
 Info 20   [00:00:39.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 21   [00:00:40.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 22   [00:00:41.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 23   [00:00:42.000] Project '/tsconfig.json' (Configured)
-Info 24   [00:00:43.000] 	Files (1)
+Info 22   [00:00:41.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 23   [00:00:42.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 24   [00:00:43.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 25   [00:00:44.000] Project '/tsconfig.json' (Configured)
+Info 26   [00:00:45.000] 	Files (1)
 	/a/file1.ts SVC-1-0 ""
 
 
 	a/file1.ts
 	  Matched by default include pattern '**/*'
 
-Info 25   [00:00:44.000] -----------------------------------------------
-Info 26   [00:00:45.000] `remove Project::
-Info 27   [00:00:46.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 28   [00:00:47.000] 	Files (1)
+Info 27   [00:00:46.000] -----------------------------------------------
+Info 28   [00:00:47.000] `remove Project::
+Info 29   [00:00:48.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 30   [00:00:49.000] 	Files (1)
 	/a/file1.ts
 
 
 	file1.ts
 	  Root file specified for compilation
 
-Info 29   [00:00:48.000] -----------------------------------------------
-Info 30   [00:00:49.000] DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
-Info 31   [00:00:50.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
-Info 32   [00:00:51.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /dev/null/inferredProject1* WatchType: Missing file
-Info 33   [00:00:52.000] Project '/tsconfig.json' (Configured)
-Info 33   [00:00:53.000] 	Files (1)
+Info 31   [00:00:50.000] -----------------------------------------------
+Info 32   [00:00:51.000] DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
+Info 33   [00:00:52.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a/node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
+Info 34   [00:00:53.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /dev/null/inferredProject1* WatchType: Missing file
+Info 35   [00:00:54.000] Project '/tsconfig.json' (Configured)
+Info 35   [00:00:55.000] 	Files (1)
 
-Info 33   [00:00:54.000] -----------------------------------------------
-Info 33   [00:00:55.000] Open files: 
-Info 33   [00:00:56.000] 	FileName: /a/file1.ts ProjectRootPath: undefined
-Info 33   [00:00:57.000] 		Projects: /tsconfig.json
+Info 35   [00:00:56.000] -----------------------------------------------
+Info 35   [00:00:57.000] Open files: 
+Info 35   [00:00:58.000] 	FileName: /a/file1.ts ProjectRootPath: undefined
+Info 35   [00:00:59.000] 		Projects: /tsconfig.json

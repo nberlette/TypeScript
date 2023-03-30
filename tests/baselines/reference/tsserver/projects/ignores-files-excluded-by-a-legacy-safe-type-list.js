@@ -36,13 +36,15 @@ Info 0    [00:00:15.000] Excluded '/a/b/bliss.js' because it matched bliss from 
 Info 1    [00:00:16.000] FileWatcher:: Added:: WatchInfo: /a/b/foo.js 500 undefined WatchType: Closed Script info
 Info 2    [00:00:17.000] Starting updateGraphWorker: Project: project
 Info 3    [00:00:18.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: project WatchType: Missing file
-Info 4    [00:00:19.000] Finishing updateGraphWorker: Project: project Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 5    [00:00:20.000] Project 'project' (External)
-Info 6    [00:00:21.000] 	Files (1)
+Info 4    [00:00:19.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: project WatchType: Type roots
+Info 5    [00:00:20.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: project WatchType: Type roots
+Info 6    [00:00:21.000] Finishing updateGraphWorker: Project: project Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 7    [00:00:22.000] Project 'project' (External)
+Info 8    [00:00:23.000] 	Files (1)
 	/a/b/foo.js Text-1 ""
 
 
 	a/b/foo.js
 	  Root file specified for compilation
 
-Info 7    [00:00:22.000] -----------------------------------------------
+Info 9    [00:00:24.000] -----------------------------------------------

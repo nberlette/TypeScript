@@ -103,25 +103,27 @@ Info 7    [00:01:24.000] DirectoryWatcher:: Added:: WatchInfo:  1 undefined Conf
 Info 8    [00:01:25.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo:  1 undefined Config: /tsconfig.json WatchType: Wild card directory
 Info 9    [00:01:26.000] Starting updateGraphWorker: Project: /tsconfig.json
 Info 10   [00:01:27.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /tsconfig.json WatchType: Missing file
-Info 11   [00:01:28.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 12   [00:01:29.000] Project '/tsconfig.json' (Configured)
-Info 13   [00:01:30.000] 	Files (1)
+Info 11   [00:01:28.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 12   [00:01:29.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /tsconfig.json WatchType: Type roots
+Info 13   [00:01:30.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 14   [00:01:31.000] Project '/tsconfig.json' (Configured)
+Info 15   [00:01:32.000] 	Files (1)
 	/index.ts SVC-1-0 ""
 
 
 	index.ts
 	  Matched by default include pattern '**/*'
 
-Info 14   [00:01:31.000] -----------------------------------------------
-Info 15   [00:01:32.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
-Info 16   [00:01:33.000] Project '/tsconfig.json' (Configured)
-Info 16   [00:01:34.000] 	Files (1)
+Info 16   [00:01:33.000] -----------------------------------------------
+Info 17   [00:01:34.000] FileWatcher:: Added:: WatchInfo: /package.json 250 undefined WatchType: package.json file
+Info 18   [00:01:35.000] Project '/tsconfig.json' (Configured)
+Info 18   [00:01:36.000] 	Files (1)
 
-Info 16   [00:01:35.000] -----------------------------------------------
-Info 16   [00:01:36.000] Open files: 
-Info 16   [00:01:37.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 16   [00:01:38.000] 		Projects: /tsconfig.json
-Info 16   [00:01:39.000] response:
+Info 18   [00:01:37.000] -----------------------------------------------
+Info 18   [00:01:38.000] Open files: 
+Info 18   [00:01:39.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 18   [00:01:40.000] 		Projects: /tsconfig.json
+Info 18   [00:01:41.000] response:
     {
       "responseRequired": false
     }
@@ -129,6 +131,8 @@ After request
 
 PolledWatches::
 /a/lib/lib.d.ts: *new*
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::
