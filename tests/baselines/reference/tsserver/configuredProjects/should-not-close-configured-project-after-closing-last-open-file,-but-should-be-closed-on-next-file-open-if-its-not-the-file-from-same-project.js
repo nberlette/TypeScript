@@ -71,35 +71,37 @@ Configured project: /a/b/tsconfig.json hasOpenRef:: false isClosed: false
 Info 15   [00:00:40.000] Search path: /a/lib
 Info 16   [00:00:41.000] For info: /a/lib/lib.d.ts :: No config files found.
 Info 17   [00:00:42.000] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
-Info 18   [00:00:43.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 19   [00:00:44.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 20   [00:00:45.000] 	Files (1)
+Info 18   [00:00:43.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
+Info 19   [00:00:44.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
+Info 20   [00:00:45.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 21   [00:00:46.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 22   [00:00:47.000] 	Files (1)
 	/a/lib/lib.d.ts SVC-1-0 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 
 
 	a/lib/lib.d.ts
 	  Root file specified for compilation
 
-Info 21   [00:00:46.000] -----------------------------------------------
-Info 22   [00:00:47.000] `remove Project::
-Info 23   [00:00:48.000] Project '/a/b/tsconfig.json' (Configured)
-Info 24   [00:00:49.000] 	Files (1)
+Info 23   [00:00:48.000] -----------------------------------------------
+Info 24   [00:00:49.000] `remove Project::
+Info 25   [00:00:50.000] Project '/a/b/tsconfig.json' (Configured)
+Info 26   [00:00:51.000] 	Files (1)
 	/a/b/main.ts
 
 
 	main.ts
 	  Part of 'files' list in tsconfig.json
 
-Info 25   [00:00:50.000] -----------------------------------------------
-Info 26   [00:00:51.000] FileWatcher:: Close:: WatchInfo: /a/b/tsconfig.json 2000 undefined Project: /a/b/tsconfig.json WatchType: Config file
-Info 27   [00:00:52.000] DirectoryWatcher:: Close:: WatchInfo: /a/b/node_modules/@types 1 undefined Project: /a/b/tsconfig.json WatchType: Type roots
-Info 28   [00:00:53.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a/b/node_modules/@types 1 undefined Project: /a/b/tsconfig.json WatchType: Type roots
-Info 29   [00:00:54.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.es6.d.ts 500 undefined Project: /a/b/tsconfig.json WatchType: Missing file
-Info 30   [00:00:55.000] FileWatcher:: Close:: WatchInfo: /a/b/main.ts 500 undefined WatchType: Closed Script info
-Info 31   [00:00:56.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 31   [00:00:57.000] 	Files (1)
+Info 27   [00:00:52.000] -----------------------------------------------
+Info 28   [00:00:53.000] FileWatcher:: Close:: WatchInfo: /a/b/tsconfig.json 2000 undefined Project: /a/b/tsconfig.json WatchType: Config file
+Info 29   [00:00:54.000] DirectoryWatcher:: Close:: WatchInfo: /a/b/node_modules/@types 1 undefined Project: /a/b/tsconfig.json WatchType: Type roots
+Info 30   [00:00:55.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /a/b/node_modules/@types 1 undefined Project: /a/b/tsconfig.json WatchType: Type roots
+Info 31   [00:00:56.000] FileWatcher:: Close:: WatchInfo: /a/lib/lib.es6.d.ts 500 undefined Project: /a/b/tsconfig.json WatchType: Missing file
+Info 32   [00:00:57.000] FileWatcher:: Close:: WatchInfo: /a/b/main.ts 500 undefined WatchType: Closed Script info
+Info 33   [00:00:58.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 33   [00:00:59.000] 	Files (1)
 
-Info 31   [00:00:58.000] -----------------------------------------------
-Info 31   [00:00:59.000] Open files: 
-Info 31   [00:01:00.000] 	FileName: /a/lib/lib.d.ts ProjectRootPath: undefined
-Info 31   [00:01:01.000] 		Projects: /dev/null/inferredProject1*
+Info 33   [00:01:00.000] -----------------------------------------------
+Info 33   [00:01:01.000] Open files: 
+Info 33   [00:01:02.000] 	FileName: /a/lib/lib.d.ts ProjectRootPath: undefined
+Info 33   [00:01:03.000] 		Projects: /dev/null/inferredProject1*

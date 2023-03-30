@@ -312,55 +312,57 @@ Info 39   [00:02:25.000] Search path: /c
 Info 40   [00:02:26.000] For info: /c/file3.ts :: No config files found.
 Info 41   [00:02:27.000] Starting updateGraphWorker: Project: /dev/null/inferredProject3*
 Info 42   [00:02:28.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.esnext.full.d.ts 500 undefined Project: /dev/null/inferredProject3* WatchType: Missing file
-Info 43   [00:02:29.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject3* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 44   [00:02:30.000] Project '/dev/null/inferredProject3*' (Inferred)
-Info 45   [00:02:31.000] 	Files (1)
+Info 43   [00:02:29.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /dev/null/inferredProject3* WatchType: Type roots
+Info 44   [00:02:30.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules/@types 1 undefined Project: /dev/null/inferredProject3* WatchType: Type roots
+Info 45   [00:02:31.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject3* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 46   [00:02:32.000] Project '/dev/null/inferredProject3*' (Inferred)
+Info 47   [00:02:33.000] 	Files (1)
 	/c/file3.ts SVC-1-0 "let z = 4;"
 
 
 	c/file3.ts
 	  Root file specified for compilation
 
-Info 46   [00:02:32.000] -----------------------------------------------
-TI:: [00:02:33.000] Got install request {"projectName":"/dev/null/inferredProject3*","fileNames":["/c/file3.ts"],"compilerOptions":{"allowJs":true,"target":99,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/","cachePath":"/a/data/","kind":"discover"}
-TI:: [00:02:34.000] Request specifies cache path '/a/data/', loading cached information...
-TI:: [00:02:35.000] Processing cache location '/a/data/'
-TI:: [00:02:36.000] Cache location was already processed...
-TI:: [00:02:37.000] Explicitly included types: []
-TI:: [00:02:38.000] Inferred typings from unresolved imports: []
-TI:: [00:02:39.000] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
-TI:: [00:02:40.000] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
-TI:: [00:02:41.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components
-TI:: [00:02:42.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
-TI:: [00:02:43.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
-TI:: [00:02:44.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules
-TI:: [00:02:45.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
-TI:: [00:02:46.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
-TI:: [00:02:47.000] Sending response:
+Info 48   [00:02:34.000] -----------------------------------------------
+TI:: [00:02:35.000] Got install request {"projectName":"/dev/null/inferredProject3*","fileNames":["/c/file3.ts"],"compilerOptions":{"allowJs":true,"target":99,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/","cachePath":"/a/data/","kind":"discover"}
+TI:: [00:02:36.000] Request specifies cache path '/a/data/', loading cached information...
+TI:: [00:02:37.000] Processing cache location '/a/data/'
+TI:: [00:02:38.000] Cache location was already processed...
+TI:: [00:02:39.000] Explicitly included types: []
+TI:: [00:02:40.000] Inferred typings from unresolved imports: []
+TI:: [00:02:41.000] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
+TI:: [00:02:42.000] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
+TI:: [00:02:43.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components
+TI:: [00:02:44.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+TI:: [00:02:45.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+TI:: [00:02:46.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules
+TI:: [00:02:47.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+TI:: [00:02:48.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+TI:: [00:02:49.000] Sending response:
     {"projectName":"/dev/null/inferredProject3*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"allowJs":true,"target":99,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
-TI:: [00:02:48.000] No new typings were requested as a result of typings discovery
-Info 47   [00:02:49.000] Project '/dev/null/inferredProject3*' (Inferred)
-Info 47   [00:02:50.000] 	Files (1)
+TI:: [00:02:50.000] No new typings were requested as a result of typings discovery
+Info 49   [00:02:51.000] Project '/dev/null/inferredProject3*' (Inferred)
+Info 49   [00:02:52.000] 	Files (1)
 
-Info 47   [00:02:51.000] -----------------------------------------------
-Info 47   [00:02:52.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 47   [00:02:53.000] 	Files (2)
+Info 49   [00:02:53.000] -----------------------------------------------
+Info 49   [00:02:54.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 49   [00:02:55.000] 	Files (2)
 
-Info 47   [00:02:54.000] -----------------------------------------------
-Info 47   [00:02:55.000] Project '/dev/null/inferredProject2*' (Inferred)
-Info 47   [00:02:56.000] 	Files (1)
+Info 49   [00:02:56.000] -----------------------------------------------
+Info 49   [00:02:57.000] Project '/dev/null/inferredProject2*' (Inferred)
+Info 49   [00:02:58.000] 	Files (1)
 
-Info 47   [00:02:57.000] -----------------------------------------------
-Info 47   [00:02:58.000] Open files: 
-Info 47   [00:02:59.000] 	FileName: /a/file1.ts ProjectRootPath: /a
-Info 47   [00:03:00.000] 		Projects: /dev/null/inferredProject1*
-Info 47   [00:03:01.000] 	FileName: /a/file2.ts ProjectRootPath: /a
-Info 47   [00:03:02.000] 		Projects: /dev/null/inferredProject1*
-Info 47   [00:03:03.000] 	FileName: /b/file2.ts ProjectRootPath: /b
-Info 47   [00:03:04.000] 		Projects: /dev/null/inferredProject2*
-Info 47   [00:03:05.000] 	FileName: /c/file3.ts ProjectRootPath: undefined
-Info 47   [00:03:06.000] 		Projects: /dev/null/inferredProject3*
-Info 47   [00:03:07.000] response:
+Info 49   [00:02:59.000] -----------------------------------------------
+Info 49   [00:03:00.000] Open files: 
+Info 49   [00:03:01.000] 	FileName: /a/file1.ts ProjectRootPath: /a
+Info 49   [00:03:02.000] 		Projects: /dev/null/inferredProject1*
+Info 49   [00:03:03.000] 	FileName: /a/file2.ts ProjectRootPath: /a
+Info 49   [00:03:04.000] 		Projects: /dev/null/inferredProject1*
+Info 49   [00:03:05.000] 	FileName: /b/file2.ts ProjectRootPath: /b
+Info 49   [00:03:06.000] 		Projects: /dev/null/inferredProject2*
+Info 49   [00:03:07.000] 	FileName: /c/file3.ts ProjectRootPath: undefined
+Info 49   [00:03:08.000] 		Projects: /dev/null/inferredProject3*
+Info 49   [00:03:09.000] response:
     {
       "responseRequired": false
     }
@@ -382,6 +384,8 @@ PolledWatches::
 /b/bower_components:
   {"pollingInterval":500}
 /b/node_modules:
+  {"pollingInterval":500}
+/node_modules/@types: *new*
   {"pollingInterval":500}
 /bower_components: *new*
   {"pollingInterval":500}
