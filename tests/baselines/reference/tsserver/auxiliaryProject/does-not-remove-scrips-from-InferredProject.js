@@ -157,12 +157,13 @@ TI:: [00:00:56.000] Finished processing cache location '/a/data/'
 TI:: [00:00:57.000] Npm config file: /a/data/package.json
 TI:: [00:00:58.000] Npm config file: '/a/data/package.json' is missing, creating new one...
 Info 38   [00:01:01.000] DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
-Info 39   [00:01:02.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
-Info 40   [00:01:03.000] DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/auxiliaryProject1* WatchType: Failed Lookup Locations
-Info 41   [00:01:04.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/auxiliaryProject1* WatchType: Failed Lookup Locations
-TI:: [00:01:09.000] Updating types-registry npm package...
-TI:: [00:01:10.000] npm install --ignore-scripts types-registry@latest
-TI:: [00:01:17.000] TI:: Updated types-registry npm package
+Info 39   [00:01:02.000] Scheduled: /dev/null/inferredProject1*FailedLookupInvalidation
+Info 40   [00:01:03.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 41   [00:01:04.000] DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/auxiliaryProject1* WatchType: Failed Lookup Locations
+Info 42   [00:01:05.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /a :: WatchInfo: / 0 undefined Project: /dev/null/auxiliaryProject1* WatchType: Failed Lookup Locations
+TI:: [00:01:10.000] Updating types-registry npm package...
+TI:: [00:01:11.000] npm install --ignore-scripts types-registry@latest
+TI:: [00:01:18.000] TI:: Updated types-registry npm package
 TI:: typing installer creation complete
 //// [/a/data/package.json]
 { "private": true }
@@ -173,38 +174,38 @@ TI:: typing installer creation complete
 }
 
 
-TI:: [00:01:18.000] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":["/b.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/","cachePath":"/a/data/","kind":"discover"}
-TI:: [00:01:19.000] Request specifies cache path '/a/data/', loading cached information...
-TI:: [00:01:20.000] Processing cache location '/a/data/'
-TI:: [00:01:21.000] Cache location was already processed...
-TI:: [00:01:22.000] Failed to load safelist from types map file '/typesMap.json'
-TI:: [00:01:23.000] Explicitly included types: []
-TI:: [00:01:24.000] Inferred typings from unresolved imports: []
-TI:: [00:01:25.000] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
-TI:: [00:01:26.000] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
-TI:: [00:01:27.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components
-TI:: [00:01:28.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
-TI:: [00:01:29.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
-TI:: [00:01:30.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules
-TI:: [00:01:31.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
-TI:: [00:01:32.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
-TI:: [00:01:33.000] Sending response:
+TI:: [00:01:19.000] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":["/b.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/","cachePath":"/a/data/","kind":"discover"}
+TI:: [00:01:20.000] Request specifies cache path '/a/data/', loading cached information...
+TI:: [00:01:21.000] Processing cache location '/a/data/'
+TI:: [00:01:22.000] Cache location was already processed...
+TI:: [00:01:23.000] Failed to load safelist from types map file '/typesMap.json'
+TI:: [00:01:24.000] Explicitly included types: []
+TI:: [00:01:25.000] Inferred typings from unresolved imports: []
+TI:: [00:01:26.000] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
+TI:: [00:01:27.000] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/bower_components","/node_modules"]}
+TI:: [00:01:28.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components
+TI:: [00:01:29.000] DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+TI:: [00:01:30.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /bower_components 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+TI:: [00:01:31.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules
+TI:: [00:01:32.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+TI:: [00:01:33.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+TI:: [00:01:34.000] Sending response:
     {"projectName":"/dev/null/inferredProject2*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
-TI:: [00:01:34.000] No new typings were requested as a result of typings discovery
-Info 42   [00:01:35.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 42   [00:01:36.000] 	Files (2)
+TI:: [00:01:35.000] No new typings were requested as a result of typings discovery
+Info 43   [00:01:36.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 43   [00:01:37.000] 	Files (2)
 
-Info 42   [00:01:37.000] -----------------------------------------------
-Info 42   [00:01:38.000] Project '/dev/null/inferredProject2*' (Inferred)
-Info 42   [00:01:39.000] 	Files (1)
+Info 43   [00:01:38.000] -----------------------------------------------
+Info 43   [00:01:39.000] Project '/dev/null/inferredProject2*' (Inferred)
+Info 43   [00:01:40.000] 	Files (1)
 
-Info 42   [00:01:40.000] -----------------------------------------------
-Info 42   [00:01:41.000] Open files: 
-Info 42   [00:01:42.000] 	FileName: /a.ts ProjectRootPath: undefined
-Info 42   [00:01:43.000] 		Projects: /dev/null/inferredProject1*,/dev/null/auxiliaryProject1*
-Info 42   [00:01:44.000] 	FileName: /b.js ProjectRootPath: undefined
-Info 42   [00:01:45.000] 		Projects: /dev/null/inferredProject2*,/dev/null/auxiliaryProject1*
-Info 42   [00:01:46.000] response:
+Info 43   [00:01:41.000] -----------------------------------------------
+Info 43   [00:01:42.000] Open files: 
+Info 43   [00:01:43.000] 	FileName: /a.ts ProjectRootPath: undefined
+Info 43   [00:01:44.000] 		Projects: /dev/null/inferredProject1*,/dev/null/auxiliaryProject1*
+Info 43   [00:01:45.000] 	FileName: /b.js ProjectRootPath: undefined
+Info 43   [00:01:46.000] 		Projects: /dev/null/inferredProject2*,/dev/null/auxiliaryProject1*
+Info 43   [00:01:47.000] response:
     {
       "responseRequired": false
     }
