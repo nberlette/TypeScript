@@ -27,9 +27,11 @@ Info 3    [00:00:24.000] Starting updateGraphWorker: Project: /user/username/pro
 Info 4    [00:00:25.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined WatchType: Closed Script info
 Info 5    [00:00:26.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 undefined Project: /user/username/projects/myproject/myproject.njsproj WatchType: Type roots
 Info 6    [00:00:27.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 undefined Project: /user/username/projects/myproject/myproject.njsproj WatchType: Type roots
-Info 7    [00:00:28.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/myproject.njsproj Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 8    [00:00:29.000] Project '/user/username/projects/myproject/myproject.njsproj' (External)
-Info 9    [00:00:30.000] 	Files (3)
+Info 7    [00:00:28.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 undefined Project: /user/username/projects/myproject/myproject.njsproj WatchType: Type roots
+Info 8    [00:00:29.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 undefined Project: /user/username/projects/myproject/myproject.njsproj WatchType: Type roots
+Info 9    [00:00:30.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/myproject.njsproj Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 10   [00:00:31.000] Project '/user/username/projects/myproject/myproject.njsproj' (External)
+Info 11   [00:00:32.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/file.ts Text-1 "const x = 10;"
 	/user/username/projects/myproject/^app.ts Text-1 "const y = 10;"
@@ -42,4 +44,4 @@ Info 9    [00:00:30.000] 	Files (3)
 	^app.ts
 	  Root file specified for compilation
 
-Info 10   [00:00:31.000] -----------------------------------------------
+Info 12   [00:00:33.000] -----------------------------------------------

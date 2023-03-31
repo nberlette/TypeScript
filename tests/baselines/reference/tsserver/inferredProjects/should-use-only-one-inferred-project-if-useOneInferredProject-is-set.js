@@ -194,37 +194,39 @@ Info 56   [00:01:53.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/pr
 Info 57   [00:01:54.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/a/node_modules/@types 1 undefined Project: /user/username/projects/myproject/a/b/tsconfig.json WatchType: Type roots
 Info 58   [00:01:55.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 undefined Project: /user/username/projects/myproject/a/b/tsconfig.json WatchType: Type roots
 Info 59   [00:01:56.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 undefined Project: /user/username/projects/myproject/a/b/tsconfig.json WatchType: Type roots
-Info 60   [00:01:57.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/a/b/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 61   [00:01:58.000] Project '/user/username/projects/myproject/a/b/tsconfig.json' (Configured)
-Info 62   [00:01:59.000] 	Files (1)
+Info 60   [00:01:57.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 undefined Project: /user/username/projects/myproject/a/b/tsconfig.json WatchType: Type roots
+Info 61   [00:01:58.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 undefined Project: /user/username/projects/myproject/a/b/tsconfig.json WatchType: Type roots
+Info 62   [00:01:59.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/a/b/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 63   [00:02:00.000] Project '/user/username/projects/myproject/a/b/tsconfig.json' (Configured)
+Info 64   [00:02:01.000] 	Files (1)
 	/user/username/projects/myproject/a/b/main.ts SVC-1-0 "let x =1;"
 
 
 	main.ts
 	  Part of 'files' list in tsconfig.json
 
-Info 63   [00:02:00.000] -----------------------------------------------
-Info 64   [00:02:01.000] Running: *ensureProjectForOpenFiles*
-Info 65   [00:02:02.000] Before ensureProjectForOpenFiles:
-Info 66   [00:02:03.000] Project '/user/username/projects/myproject/a/b/tsconfig.json' (Configured)
-Info 66   [00:02:04.000] 	Files (1)
+Info 65   [00:02:02.000] -----------------------------------------------
+Info 66   [00:02:03.000] Running: *ensureProjectForOpenFiles*
+Info 67   [00:02:04.000] Before ensureProjectForOpenFiles:
+Info 68   [00:02:05.000] Project '/user/username/projects/myproject/a/b/tsconfig.json' (Configured)
+Info 68   [00:02:06.000] 	Files (1)
 
-Info 66   [00:02:05.000] -----------------------------------------------
-Info 66   [00:02:06.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 66   [00:02:07.000] 	Files (4)
+Info 68   [00:02:07.000] -----------------------------------------------
+Info 68   [00:02:08.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 68   [00:02:09.000] 	Files (4)
 
-Info 66   [00:02:08.000] -----------------------------------------------
-Info 66   [00:02:09.000] Open files: 
-Info 66   [00:02:10.000] 	FileName: /user/username/projects/myproject/a/b/main.ts ProjectRootPath: undefined
-Info 66   [00:02:11.000] 		Projects: /user/username/projects/myproject/a/b/tsconfig.json
-Info 66   [00:02:12.000] 	FileName: /user/username/projects/myproject/a/c/main.ts ProjectRootPath: undefined
-Info 66   [00:02:13.000] 		Projects: /dev/null/inferredProject1*
-Info 66   [00:02:14.000] 	FileName: /user/username/projects/myproject/a/d/main.ts ProjectRootPath: undefined
-Info 66   [00:02:15.000] 		Projects: /dev/null/inferredProject1*
-Info 66   [00:02:16.000] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
-Info 67   [00:02:17.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 68   [00:02:18.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 69   [00:02:19.000] 	Files (3)
+Info 68   [00:02:10.000] -----------------------------------------------
+Info 68   [00:02:11.000] Open files: 
+Info 68   [00:02:12.000] 	FileName: /user/username/projects/myproject/a/b/main.ts ProjectRootPath: undefined
+Info 68   [00:02:13.000] 		Projects: /user/username/projects/myproject/a/b/tsconfig.json
+Info 68   [00:02:14.000] 	FileName: /user/username/projects/myproject/a/c/main.ts ProjectRootPath: undefined
+Info 68   [00:02:15.000] 		Projects: /dev/null/inferredProject1*
+Info 68   [00:02:16.000] 	FileName: /user/username/projects/myproject/a/d/main.ts ProjectRootPath: undefined
+Info 68   [00:02:17.000] 		Projects: /dev/null/inferredProject1*
+Info 68   [00:02:18.000] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 69   [00:02:19.000] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 70   [00:02:20.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 71   [00:02:21.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/a/c/main.ts SVC-1-0 "let x =1;"
 	/user/username/projects/myproject/a/d/main.ts SVC-1-0 "let x =1;"
@@ -237,23 +239,23 @@ Info 69   [00:02:19.000] 	Files (3)
 	user/username/projects/myproject/a/d/main.ts
 	  Root file specified for compilation
 
-Info 70   [00:02:20.000] -----------------------------------------------
-Info 71   [00:02:21.000] After ensureProjectForOpenFiles:
-Info 72   [00:02:22.000] Project '/user/username/projects/myproject/a/b/tsconfig.json' (Configured)
-Info 72   [00:02:23.000] 	Files (1)
+Info 72   [00:02:22.000] -----------------------------------------------
+Info 73   [00:02:23.000] After ensureProjectForOpenFiles:
+Info 74   [00:02:24.000] Project '/user/username/projects/myproject/a/b/tsconfig.json' (Configured)
+Info 74   [00:02:25.000] 	Files (1)
 
-Info 72   [00:02:24.000] -----------------------------------------------
-Info 72   [00:02:25.000] Project '/dev/null/inferredProject1*' (Inferred)
-Info 72   [00:02:26.000] 	Files (3)
+Info 74   [00:02:26.000] -----------------------------------------------
+Info 74   [00:02:27.000] Project '/dev/null/inferredProject1*' (Inferred)
+Info 74   [00:02:28.000] 	Files (3)
 
-Info 72   [00:02:27.000] -----------------------------------------------
-Info 72   [00:02:28.000] Open files: 
-Info 72   [00:02:29.000] 	FileName: /user/username/projects/myproject/a/b/main.ts ProjectRootPath: undefined
-Info 72   [00:02:30.000] 		Projects: /user/username/projects/myproject/a/b/tsconfig.json
-Info 72   [00:02:31.000] 	FileName: /user/username/projects/myproject/a/c/main.ts ProjectRootPath: undefined
-Info 72   [00:02:32.000] 		Projects: /dev/null/inferredProject1*
-Info 72   [00:02:33.000] 	FileName: /user/username/projects/myproject/a/d/main.ts ProjectRootPath: undefined
-Info 72   [00:02:34.000] 		Projects: /dev/null/inferredProject1*
+Info 74   [00:02:29.000] -----------------------------------------------
+Info 74   [00:02:30.000] Open files: 
+Info 74   [00:02:31.000] 	FileName: /user/username/projects/myproject/a/b/main.ts ProjectRootPath: undefined
+Info 74   [00:02:32.000] 		Projects: /user/username/projects/myproject/a/b/tsconfig.json
+Info 74   [00:02:33.000] 	FileName: /user/username/projects/myproject/a/c/main.ts ProjectRootPath: undefined
+Info 74   [00:02:34.000] 		Projects: /dev/null/inferredProject1*
+Info 74   [00:02:35.000] 	FileName: /user/username/projects/myproject/a/d/main.ts ProjectRootPath: undefined
+Info 74   [00:02:36.000] 		Projects: /dev/null/inferredProject1*
 After running Timeout callback:: count: 0
 
 PolledWatches::
@@ -282,6 +284,8 @@ PolledWatches::
 /user/username/projects/myproject/a/node_modules/@types: *new*
   {"pollingInterval":500}
 /user/username/projects/myproject/node_modules/@types: *new*
+  {"pollingInterval":500}
+/user/username/projects/node_modules/@types: *new*
   {"pollingInterval":500}
 
 PolledWatches *deleted*::

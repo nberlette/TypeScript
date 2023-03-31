@@ -86,10 +86,14 @@ Info 15   [00:00:38.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/proj
 Info 16   [00:00:39.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
 Info 17   [00:00:40.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: Closed Script info
 Info 18   [00:00:41.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 19   [00:00:42.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 20   [00:00:43.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 21   [00:00:44.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 22   [00:00:45.000] 	Files (3)
+Info 19   [00:00:42.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 20   [00:00:43.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 21   [00:00:44.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 22   [00:00:45.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 23   [00:00:46.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 24   [00:00:47.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 25   [00:00:48.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 26   [00:00:49.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/file2.ts Text-1 "export function bar(){}"
 	/user/username/projects/myproject/file1.ts SVC-1-0 "import { foo } from \"module1\";\n                foo();\n                import { bar } from \"./file2\";\n                bar();"
@@ -103,19 +107,25 @@ Info 22   [00:00:45.000] 	Files (3)
 	file1.ts
 	  Matched by default include pattern '**/*'
 
-Info 23   [00:00:46.000] -----------------------------------------------
-Info 24   [00:00:47.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 24   [00:00:48.000] 	Files (3)
+Info 27   [00:00:50.000] -----------------------------------------------
+Info 28   [00:00:51.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 28   [00:00:52.000] 	Files (3)
 
-Info 24   [00:00:49.000] -----------------------------------------------
-Info 24   [00:00:50.000] Open files: 
-Info 24   [00:00:51.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 24   [00:00:52.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 24   [00:00:53.000] response:
+Info 28   [00:00:53.000] -----------------------------------------------
+Info 28   [00:00:54.000] Open files: 
+Info 28   [00:00:55.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 28   [00:00:56.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 28   [00:00:57.000] response:
     {
       "responseRequired": false
     }
 After request
+
+PolledWatches::
+/user/username/projects/node_modules: *new*
+  {"pollingInterval":500}
+/user/username/projects/node_modules/@types: *new*
+  {"pollingInterval":500}
 
 FsWatches::
 /user/username/projects/myproject/tsconfig.json: *new*
@@ -135,23 +145,27 @@ export function foo(): string;
 
 Before request
 
-Info 25   [00:01:00.000] request:
+Info 29   [00:01:04.000] request:
     {
       "command": "reloadProjects",
       "seq": 3,
       "type": "request"
     }
-Info 26   [00:01:01.000] reload projects.
-Info 27   [00:01:02.000] Scheduled: /user/username/projects/myproject/tsconfig.json
-Info 28   [00:01:03.000] Scheduled: *ensureProjectForOpenFiles*
-Info 29   [00:01:04.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
-Info 30   [00:01:05.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
-Info 31   [00:01:06.000] Search path: /user/username/projects/myproject
-Info 32   [00:01:07.000] For info: /user/username/projects/myproject/file1.ts :: Config file name: /user/username/projects/myproject/tsconfig.json
-Info 33   [00:01:08.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 34   [00:01:09.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 35   [00:01:10.000] Reloading configured project /user/username/projects/myproject/tsconfig.json
-Info 36   [00:01:11.000] Config: /user/username/projects/myproject/tsconfig.json : {
+Info 30   [00:01:05.000] reload projects.
+Info 31   [00:01:06.000] Scheduled: /user/username/projects/myproject/tsconfig.json
+Info 32   [00:01:07.000] Scheduled: *ensureProjectForOpenFiles*
+Info 33   [00:01:08.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
+Info 34   [00:01:09.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 35   [00:01:10.000] Search path: /user/username/projects/myproject
+Info 36   [00:01:11.000] For info: /user/username/projects/myproject/file1.ts :: Config file name: /user/username/projects/myproject/tsconfig.json
+Info 37   [00:01:12.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 38   [00:01:13.000] DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 39   [00:01:14.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 40   [00:01:15.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 41   [00:01:16.000] DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 42   [00:01:17.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 43   [00:01:18.000] Reloading configured project /user/username/projects/myproject/tsconfig.json
+Info 44   [00:01:19.000] Config: /user/username/projects/myproject/tsconfig.json : {
  "rootNames": [
   "/user/username/projects/myproject/file1.ts",
   "/user/username/projects/myproject/file2.ts"
@@ -165,14 +179,16 @@ Info 36   [00:01:11.000] Config: /user/username/projects/myproject/tsconfig.json
   ]
  }
 }
-Info 37   [00:01:12.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
-Info 38   [00:01:13.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
-Info 39   [00:01:14.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
-Info 40   [00:01:15.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 41   [00:01:16.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 42   [00:01:17.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 2 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 43   [00:01:18.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 44   [00:01:19.000] 	Files (4)
+Info 45   [00:01:20.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
+Info 46   [00:01:21.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+Info 47   [00:01:22.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+Info 48   [00:01:23.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 49   [00:01:24.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 50   [00:01:25.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 51   [00:01:26.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 52   [00:01:27.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 2 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 53   [00:01:28.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 54   [00:01:29.000] 	Files (4)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/node_modules/module1/index.d.ts Text-1 "export function foo(): string;"
 	/user/username/projects/myproject/file2.ts Text-1 "export function bar(){}"
@@ -189,28 +205,38 @@ Info 44   [00:01:19.000] 	Files (4)
 	file1.ts
 	  Matched by default include pattern '**/*'
 
-Info 45   [00:01:20.000] -----------------------------------------------
-Info 46   [00:01:21.000] Before ensureProjectForOpenFiles:
-Info 47   [00:01:22.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 47   [00:01:23.000] 	Files (4)
+Info 55   [00:01:30.000] -----------------------------------------------
+Info 56   [00:01:31.000] Before ensureProjectForOpenFiles:
+Info 57   [00:01:32.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 57   [00:01:33.000] 	Files (4)
 
-Info 47   [00:01:24.000] -----------------------------------------------
-Info 47   [00:01:25.000] Open files: 
-Info 47   [00:01:26.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 47   [00:01:27.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 47   [00:01:28.000] After ensureProjectForOpenFiles:
-Info 48   [00:01:29.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 48   [00:01:30.000] 	Files (4)
+Info 57   [00:01:34.000] -----------------------------------------------
+Info 57   [00:01:35.000] Open files: 
+Info 57   [00:01:36.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 57   [00:01:37.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 57   [00:01:38.000] After ensureProjectForOpenFiles:
+Info 58   [00:01:39.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 58   [00:01:40.000] 	Files (4)
 
-Info 48   [00:01:31.000] -----------------------------------------------
-Info 48   [00:01:32.000] Open files: 
-Info 48   [00:01:33.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 48   [00:01:34.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 48   [00:01:35.000] response:
+Info 58   [00:01:41.000] -----------------------------------------------
+Info 58   [00:01:42.000] Open files: 
+Info 58   [00:01:43.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 58   [00:01:44.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 58   [00:01:45.000] response:
     {
       "responseRequired": false
     }
 After request
+
+PolledWatches::
+/user/username/projects/node_modules/@types:
+  {"pollingInterval":500} *new*
+
+PolledWatches *deleted*::
+/user/username/projects/node_modules:
+  {"pollingInterval":500}
+/user/username/projects/node_modules/@types:
+  {"pollingInterval":500}
 
 FsWatches::
 /user/username/projects/myproject/tsconfig.json:
@@ -233,25 +259,27 @@ export function bar(){}
 
 Before request
 
-Info 49   [00:01:39.000] request:
+Info 59   [00:01:49.000] request:
     {
       "command": "reloadProjects",
       "seq": 4,
       "type": "request"
     }
-Info 50   [00:01:40.000] reload projects.
-Info 51   [00:01:41.000] Scheduled: /user/username/projects/myproject/tsconfig.json
-Info 52   [00:01:42.000] Scheduled: *ensureProjectForOpenFiles*
-Info 53   [00:01:43.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
-Info 54   [00:01:44.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
-Info 55   [00:01:45.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
-Info 56   [00:01:46.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
-Info 57   [00:01:47.000] Search path: /user/username/projects/myproject
-Info 58   [00:01:48.000] For info: /user/username/projects/myproject/file1.ts :: Config file name: /user/username/projects/myproject/tsconfig.json
-Info 59   [00:01:49.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 60   [00:01:50.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 61   [00:01:51.000] Reloading configured project /user/username/projects/myproject/tsconfig.json
-Info 62   [00:01:52.000] Config: /user/username/projects/myproject/tsconfig.json : {
+Info 60   [00:01:50.000] reload projects.
+Info 61   [00:01:51.000] Scheduled: /user/username/projects/myproject/tsconfig.json
+Info 62   [00:01:52.000] Scheduled: *ensureProjectForOpenFiles*
+Info 63   [00:01:53.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
+Info 64   [00:01:54.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 65   [00:01:55.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
+Info 66   [00:01:56.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 67   [00:01:57.000] Search path: /user/username/projects/myproject
+Info 68   [00:01:58.000] For info: /user/username/projects/myproject/file1.ts :: Config file name: /user/username/projects/myproject/tsconfig.json
+Info 69   [00:01:59.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 70   [00:02:00.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 71   [00:02:01.000] DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 72   [00:02:02.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 73   [00:02:03.000] Reloading configured project /user/username/projects/myproject/tsconfig.json
+Info 74   [00:02:04.000] Config: /user/username/projects/myproject/tsconfig.json : {
  "rootNames": [
   "/user/username/projects/myproject/file1.ts",
   "/user/username/projects/myproject/file2.ts"
@@ -265,39 +293,61 @@ Info 62   [00:01:52.000] Config: /user/username/projects/myproject/tsconfig.json
   ]
  }
 }
-Info 63   [00:01:53.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
-Info 64   [00:01:54.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 65   [00:01:55.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 66   [00:01:56.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 3 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 67   [00:01:57.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 68   [00:01:58.000] 	Files (4)
+Info 75   [00:02:05.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
+Info 76   [00:02:06.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 77   [00:02:07.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 78   [00:02:08.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 79   [00:02:09.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 80   [00:02:10.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 3 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 81   [00:02:11.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 82   [00:02:12.000] 	Files (4)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/node_modules/module1/index.d.ts Text-1 "export function foo(): string;"
 	/user/username/projects/myproject/file2.ts Text-2 "export function bar(){}\n            bar();"
 	/user/username/projects/myproject/file1.ts SVC-1-0 "import { foo } from \"module1\";\n                foo();\n                import { bar } from \"./file2\";\n                bar();"
 
-Info 69   [00:01:59.000] -----------------------------------------------
-Info 70   [00:02:00.000] Before ensureProjectForOpenFiles:
-Info 71   [00:02:01.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 71   [00:02:02.000] 	Files (4)
+Info 83   [00:02:13.000] -----------------------------------------------
+Info 84   [00:02:14.000] Before ensureProjectForOpenFiles:
+Info 85   [00:02:15.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 85   [00:02:16.000] 	Files (4)
 
-Info 71   [00:02:03.000] -----------------------------------------------
-Info 71   [00:02:04.000] Open files: 
-Info 71   [00:02:05.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 71   [00:02:06.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 71   [00:02:07.000] After ensureProjectForOpenFiles:
-Info 72   [00:02:08.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 72   [00:02:09.000] 	Files (4)
+Info 85   [00:02:17.000] -----------------------------------------------
+Info 85   [00:02:18.000] Open files: 
+Info 85   [00:02:19.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 85   [00:02:20.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 85   [00:02:21.000] After ensureProjectForOpenFiles:
+Info 86   [00:02:22.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 86   [00:02:23.000] 	Files (4)
 
-Info 72   [00:02:10.000] -----------------------------------------------
-Info 72   [00:02:11.000] Open files: 
-Info 72   [00:02:12.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 72   [00:02:13.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 72   [00:02:14.000] response:
+Info 86   [00:02:24.000] -----------------------------------------------
+Info 86   [00:02:25.000] Open files: 
+Info 86   [00:02:26.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 86   [00:02:27.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 86   [00:02:28.000] response:
     {
       "responseRequired": false
     }
 After request
+
+PolledWatches::
+/user/username/projects/node_modules/@types:
+  {"pollingInterval":500} *new*
+
+PolledWatches *deleted*::
+/user/username/projects/node_modules/@types:
+  {"pollingInterval":500}
+
+FsWatches::
+/user/username/projects/myproject/tsconfig.json:
+  {}
+/a/lib/lib.d.ts:
+  {}
+
+FsWatchesRecursive::
+/user/username/projects/myproject:
+  {}
+/user/username/projects/myproject/node_modules:
+  {}
 
 Timeout callback:: count: 0
 Immedidate callback:: count: 0
@@ -305,26 +355,28 @@ Immedidate callback:: count: 0
 
 Before request
 
-Info 73   [00:02:16.000] request:
+Info 87   [00:02:30.000] request:
     {
       "command": "reloadProjects",
       "seq": 5,
       "type": "request"
     }
-Info 74   [00:02:17.000] reload projects.
-Info 75   [00:02:18.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/file2.ts 500 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: Closed Script info
-Info 76   [00:02:19.000] Scheduled: /user/username/projects/myproject/tsconfig.json
-Info 77   [00:02:20.000] Scheduled: *ensureProjectForOpenFiles*
-Info 78   [00:02:21.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
-Info 79   [00:02:22.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
-Info 80   [00:02:23.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
-Info 81   [00:02:24.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
-Info 82   [00:02:25.000] Search path: /user/username/projects/myproject
-Info 83   [00:02:26.000] For info: /user/username/projects/myproject/file1.ts :: Config file name: /user/username/projects/myproject/tsconfig.json
-Info 84   [00:02:27.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 85   [00:02:28.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 86   [00:02:29.000] Reloading configured project /user/username/projects/myproject/tsconfig.json
-Info 87   [00:02:30.000] Config: /user/username/projects/myproject/tsconfig.json : {
+Info 88   [00:02:31.000] reload projects.
+Info 89   [00:02:32.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/file2.ts 500 {"excludeFiles":["/user/username/projects/myproject/file2.ts"]} WatchType: Closed Script info
+Info 90   [00:02:33.000] Scheduled: /user/username/projects/myproject/tsconfig.json
+Info 91   [00:02:34.000] Scheduled: *ensureProjectForOpenFiles*
+Info 92   [00:02:35.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
+Info 93   [00:02:36.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 94   [00:02:37.000] Scheduled: /user/username/projects/myproject/tsconfig.json, Cancelled earlier one
+Info 95   [00:02:38.000] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 96   [00:02:39.000] Search path: /user/username/projects/myproject
+Info 97   [00:02:40.000] For info: /user/username/projects/myproject/file1.ts :: Config file name: /user/username/projects/myproject/tsconfig.json
+Info 98   [00:02:41.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 99   [00:02:42.000] ExcludeWatcher:: Close:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 100  [00:02:43.000] DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 101  [00:02:44.000] Elapsed:: *ms DirectoryWatcher:: Close:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 102  [00:02:45.000] Reloading configured project /user/username/projects/myproject/tsconfig.json
+Info 103  [00:02:46.000] Config: /user/username/projects/myproject/tsconfig.json : {
  "rootNames": [
   "/user/username/projects/myproject/file1.ts"
  ],
@@ -337,16 +389,18 @@ Info 87   [00:02:30.000] Config: /user/username/projects/myproject/tsconfig.json
   ]
  }
 }
-Info 88   [00:02:31.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
-Info 89   [00:02:32.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/file2 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 90   [00:02:33.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/file2 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 91   [00:02:34.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 0 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 92   [00:02:35.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 0 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 93   [00:02:36.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
-Info 94   [00:02:37.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 95   [00:02:38.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 4 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 96   [00:02:39.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 97   [00:02:40.000] 	Files (3)
+Info 104  [00:02:47.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
+Info 105  [00:02:48.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/file2 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 106  [00:02:49.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/file2 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 107  [00:02:50.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 0 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 108  [00:02:51.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject 0 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 109  [00:02:52.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Failed Lookup Locations
+Info 110  [00:02:53.000] ExcludeWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 111  [00:02:54.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 112  [00:02:55.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 {"excludeFiles":["/user/username/projects/myproject/file2.ts"],"excludeDirectories":["/user/username/projects/myproject/node_modules"]} Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 113  [00:02:56.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 4 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 114  [00:02:57.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 115  [00:02:58.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/node_modules/module1/index.d.ts Text-1 "export function foo(): string;"
 	/user/username/projects/myproject/file1.ts SVC-1-0 "import { foo } from \"module1\";\n                foo();\n                import { bar } from \"./file2\";\n                bar();"
@@ -359,24 +413,24 @@ Info 97   [00:02:40.000] 	Files (3)
 	file1.ts
 	  Matched by default include pattern '**/*'
 
-Info 98   [00:02:41.000] -----------------------------------------------
-Info 99   [00:02:42.000] Before ensureProjectForOpenFiles:
-Info 100  [00:02:43.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 100  [00:02:44.000] 	Files (3)
+Info 116  [00:02:59.000] -----------------------------------------------
+Info 117  [00:03:00.000] Before ensureProjectForOpenFiles:
+Info 118  [00:03:01.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 118  [00:03:02.000] 	Files (3)
 
-Info 100  [00:02:45.000] -----------------------------------------------
-Info 100  [00:02:46.000] Open files: 
-Info 100  [00:02:47.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 100  [00:02:48.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 100  [00:02:49.000] After ensureProjectForOpenFiles:
-Info 101  [00:02:50.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 101  [00:02:51.000] 	Files (3)
+Info 118  [00:03:03.000] -----------------------------------------------
+Info 118  [00:03:04.000] Open files: 
+Info 118  [00:03:05.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 118  [00:03:06.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 118  [00:03:07.000] After ensureProjectForOpenFiles:
+Info 119  [00:03:08.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 119  [00:03:09.000] 	Files (3)
 
-Info 101  [00:02:52.000] -----------------------------------------------
-Info 101  [00:02:53.000] Open files: 
-Info 101  [00:02:54.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
-Info 101  [00:02:55.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 101  [00:02:56.000] response:
+Info 119  [00:03:10.000] -----------------------------------------------
+Info 119  [00:03:11.000] Open files: 
+Info 119  [00:03:12.000] 	FileName: /user/username/projects/myproject/file1.ts ProjectRootPath: undefined
+Info 119  [00:03:13.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 119  [00:03:14.000] response:
     {
       "responseRequired": false
     }
@@ -384,6 +438,12 @@ After request
 
 PolledWatches::
 /user/username/projects/myproject/file2: *new*
+  {"pollingInterval":500}
+/user/username/projects/node_modules/@types:
+  {"pollingInterval":500} *new*
+
+PolledWatches *deleted*::
+/user/username/projects/node_modules/@types:
   {"pollingInterval":500}
 
 FsWatches::

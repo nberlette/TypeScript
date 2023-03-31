@@ -26,27 +26,29 @@ Info 8    [00:00:23.000] Starting updateGraphWorker: Project: /users/username/pr
 Info 9    [00:00:24.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined Project: /users/username/projects/project/tsconfig.json WatchType: Missing file
 Info 10   [00:00:25.000] DirectoryWatcher:: Added:: WatchInfo: /users/username/projects/project/node_modules/@types 1 undefined Project: /users/username/projects/project/tsconfig.json WatchType: Type roots
 Info 11   [00:00:26.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /users/username/projects/project/node_modules/@types 1 undefined Project: /users/username/projects/project/tsconfig.json WatchType: Type roots
-Info 12   [00:00:27.000] Finishing updateGraphWorker: Project: /users/username/projects/project/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 13   [00:00:28.000] Project '/users/username/projects/project/tsconfig.json' (Configured)
-Info 14   [00:00:29.000] 	Files (1)
+Info 12   [00:00:27.000] DirectoryWatcher:: Added:: WatchInfo: /users/username/projects/node_modules/@types 1 undefined Project: /users/username/projects/project/tsconfig.json WatchType: Type roots
+Info 13   [00:00:28.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /users/username/projects/node_modules/@types 1 undefined Project: /users/username/projects/project/tsconfig.json WatchType: Type roots
+Info 14   [00:00:29.000] Finishing updateGraphWorker: Project: /users/username/projects/project/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 15   [00:00:30.000] Project '/users/username/projects/project/tsconfig.json' (Configured)
+Info 16   [00:00:31.000] 	Files (1)
 	/users/username/projects/project/a.ts SVC-1-0 "export const a = 10;"
 
 
 	a.ts
 	  Matched by default include pattern '**/*'
 
-Info 15   [00:00:30.000] -----------------------------------------------
-Info 16   [00:00:31.000] Project '/users/username/projects/project/tsconfig.json' (Configured)
-Info 16   [00:00:32.000] 	Files (1)
+Info 17   [00:00:32.000] -----------------------------------------------
+Info 18   [00:00:33.000] Project '/users/username/projects/project/tsconfig.json' (Configured)
+Info 18   [00:00:34.000] 	Files (1)
 
-Info 16   [00:00:33.000] -----------------------------------------------
-Info 16   [00:00:34.000] Open files: 
-Info 16   [00:00:35.000] 	FileName: /users/username/projects/project/a.ts ProjectRootPath: undefined
-Info 16   [00:00:36.000] 		Projects: /users/username/projects/project/tsconfig.json
-Info 16   [00:00:38.000] DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
-Info 17   [00:00:39.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
-Info 18   [00:00:42.000] DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
-Info 19   [00:00:43.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
+Info 18   [00:00:35.000] -----------------------------------------------
+Info 18   [00:00:36.000] Open files: 
+Info 18   [00:00:37.000] 	FileName: /users/username/projects/project/a.ts ProjectRootPath: undefined
+Info 18   [00:00:38.000] 		Projects: /users/username/projects/project/tsconfig.json
+Info 18   [00:00:40.000] DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
+Info 19   [00:00:41.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
+Info 20   [00:00:44.000] DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
+Info 21   [00:00:45.000] Elapsed:: *ms DirectoryWatcher:: Triggered with /users/username/projects/project/a.ts :: WatchInfo: /users/username/projects/project 1 undefined Config: /users/username/projects/project/tsconfig.json WatchType: Wild card directory
 Timeout callback:: count: 0
 Immedidate callback:: count: 0
 //// [/users/username/projects/project/a.ts] file changed its modified time
@@ -55,6 +57,8 @@ PolledWatches::
 /a/lib/lib.d.ts: *new*
   {"pollingInterval":500}
 /users/username/projects/project/node_modules/@types: *new*
+  {"pollingInterval":500}
+/users/username/projects/node_modules/@types: *new*
   {"pollingInterval":500}
 
 FsWatches::

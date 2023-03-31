@@ -43,9 +43,11 @@ Info 9    [00:00:32.000] FileWatcher:: Added:: WatchInfo: /user/username/project
 Info 10   [00:00:33.000] FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 500 undefined WatchType: Closed Script info
 Info 11   [00:00:34.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 undefined Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
 Info 12   [00:00:35.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/myproject/node_modules/@types 1 undefined Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
-Info 13   [00:00:36.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 14   [00:00:37.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 15   [00:00:38.000] 	Files (3)
+Info 13   [00:00:36.000] DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 undefined Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 14   [00:00:37.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /user/username/projects/node_modules/@types 1 undefined Project: /user/username/projects/myproject/tsconfig.json WatchType: Type roots
+Info 15   [00:00:38.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 16   [00:00:39.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 17   [00:00:40.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/module1.d.ts Text-1 "export const a: number;"
 	/user/username/projects/myproject/index.ts SVC-1-0 "import {a} from \"./module1\""
@@ -58,18 +60,18 @@ Info 15   [00:00:38.000] 	Files (3)
 	index.ts
 	  Part of 'files' list in tsconfig.json
 
-Info 16   [00:00:39.000] -----------------------------------------------
-Info 17   [00:00:40.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 17   [00:00:41.000] 	Files (3)
+Info 18   [00:00:41.000] -----------------------------------------------
+Info 19   [00:00:42.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 19   [00:00:43.000] 	Files (3)
 
-Info 17   [00:00:42.000] -----------------------------------------------
-Info 17   [00:00:43.000] Open files: 
-Info 17   [00:00:44.000] 	FileName: /user/username/projects/myproject/index.ts ProjectRootPath: undefined
-Info 17   [00:00:45.000] 		Projects: /user/username/projects/myproject/tsconfig.json
-Info 17   [00:00:46.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
-Info 18   [00:00:47.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 2 structureChanged: true structureIsReused:: SafeModules Elapsed:: *ms
-Info 19   [00:00:48.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 20   [00:00:49.000] 	Files (2)
+Info 19   [00:00:44.000] -----------------------------------------------
+Info 19   [00:00:45.000] Open files: 
+Info 19   [00:00:46.000] 	FileName: /user/username/projects/myproject/index.ts ProjectRootPath: undefined
+Info 19   [00:00:47.000] 		Projects: /user/username/projects/myproject/tsconfig.json
+Info 19   [00:00:48.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
+Info 20   [00:00:49.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 2 structureChanged: true structureIsReused:: SafeModules Elapsed:: *ms
+Info 21   [00:00:50.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 22   [00:00:51.000] 	Files (2)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/index.ts SVC-1-1 ""
 
@@ -79,13 +81,13 @@ Info 20   [00:00:49.000] 	Files (2)
 	index.ts
 	  Part of 'files' list in tsconfig.json
 
-Info 21   [00:00:50.000] -----------------------------------------------
-Info 22   [00:00:54.000] FileWatcher:: Triggered with /user/username/projects/myproject/module1.d.ts 1:: WatchInfo: /user/username/projects/myproject/module1.d.ts 500 undefined WatchType: Closed Script info
-Info 23   [00:00:55.000] Elapsed:: *ms FileWatcher:: Triggered with /user/username/projects/myproject/module1.d.ts 1:: WatchInfo: /user/username/projects/myproject/module1.d.ts 500 undefined WatchType: Closed Script info
-Info 24   [00:00:56.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
-Info 25   [00:00:57.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 3 structureChanged: true structureIsReused:: SafeModules Elapsed:: *ms
-Info 26   [00:00:58.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
-Info 27   [00:00:59.000] 	Files (3)
+Info 23   [00:00:52.000] -----------------------------------------------
+Info 24   [00:00:56.000] FileWatcher:: Triggered with /user/username/projects/myproject/module1.d.ts 1:: WatchInfo: /user/username/projects/myproject/module1.d.ts 500 undefined WatchType: Closed Script info
+Info 25   [00:00:57.000] Elapsed:: *ms FileWatcher:: Triggered with /user/username/projects/myproject/module1.d.ts 1:: WatchInfo: /user/username/projects/myproject/module1.d.ts 500 undefined WatchType: Closed Script info
+Info 26   [00:00:58.000] Starting updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json
+Info 27   [00:00:59.000] Finishing updateGraphWorker: Project: /user/username/projects/myproject/tsconfig.json Version: 3 structureChanged: true structureIsReused:: SafeModules Elapsed:: *ms
+Info 28   [00:01:00.000] Project '/user/username/projects/myproject/tsconfig.json' (Configured)
+Info 29   [00:01:01.000] 	Files (3)
 	/a/lib/lib.d.ts Text-1 "/// <reference no-default-lib=\"true\"/>\ninterface Boolean {}\ninterface Function {}\ninterface CallableFunction {}\ninterface NewableFunction {}\ninterface IArguments {}\ninterface Number { toExponential: any; }\ninterface Object {}\ninterface RegExp {}\ninterface String { charAt: any; }\ninterface Array<T> { length: number; [n: number]: T; }"
 	/user/username/projects/myproject/module1.d.ts Text-2 "export const a: number;\nexport const b: number;"
 	/user/username/projects/myproject/index.ts SVC-1-2 "import {a} from \"./module1\""
@@ -98,4 +100,4 @@ Info 27   [00:00:59.000] 	Files (3)
 	index.ts
 	  Part of 'files' list in tsconfig.json
 
-Info 28   [00:01:00.000] -----------------------------------------------
+Info 30   [00:01:02.000] -----------------------------------------------

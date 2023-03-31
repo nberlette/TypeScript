@@ -1085,9 +1085,10 @@ Info 121  [00:07:20.000] AutoImportProviderProject: found 1 root files in 1 depe
 Info 122  [00:07:21.000] DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
 Info 123  [00:07:22.000] Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
 Info 124  [00:07:23.000] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
-Info 125  [00:07:24.000] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
-Info 126  [00:07:25.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
-Info 127  [00:07:26.000] 	Files (51)
+Info 125  [00:07:24.000] FileWatcher:: Added:: WatchInfo: /node_modules/dep-a/package.json 2000 undefined Project: /dev/null/autoImportProviderProject1* WatchType: File location affecting resolution
+Info 126  [00:07:25.000] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed:: *ms
+Info 127  [00:07:26.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 128  [00:07:27.000] 	Files (51)
 	/node_modules/dep-a/file_0.ts Text-1 "export const depA_0__0 = 0;"
 	/node_modules/dep-a/file_1.ts Text-1 "export const depA_1__0 = 0;"
 	/node_modules/dep-a/file_2.ts Text-1 "export const depA_2__0 = 0;"
@@ -1244,19 +1245,19 @@ Info 127  [00:07:26.000] 	Files (51)
 	node_modules/dep-a/index.d.ts
 	  Root file specified for compilation
 
-Info 128  [00:07:27.000] -----------------------------------------------
-Info 129  [00:07:28.000] Project '/tsconfig.json' (Configured)
-Info 129  [00:07:29.000] 	Files (101)
+Info 129  [00:07:28.000] -----------------------------------------------
+Info 130  [00:07:29.000] Project '/tsconfig.json' (Configured)
+Info 130  [00:07:30.000] 	Files (101)
 
-Info 129  [00:07:30.000] -----------------------------------------------
-Info 129  [00:07:31.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
-Info 129  [00:07:32.000] 	Files (51)
+Info 130  [00:07:31.000] -----------------------------------------------
+Info 130  [00:07:32.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 130  [00:07:33.000] 	Files (51)
 
-Info 129  [00:07:33.000] -----------------------------------------------
-Info 129  [00:07:34.000] Open files: 
-Info 129  [00:07:35.000] 	FileName: /index.ts ProjectRootPath: undefined
-Info 129  [00:07:36.000] 		Projects: /tsconfig.json
-Info 129  [00:07:37.000] response:
+Info 130  [00:07:34.000] -----------------------------------------------
+Info 130  [00:07:35.000] Open files: 
+Info 130  [00:07:36.000] 	FileName: /index.ts ProjectRootPath: undefined
+Info 130  [00:07:37.000] 		Projects: /tsconfig.json
+Info 130  [00:07:38.000] response:
     {
       "responseRequired": false
     }
@@ -1473,6 +1474,8 @@ FsWatches::
   {}
 /package.json: *new*
   {}
+/node_modules/dep-a/package.json: *new*
+  {}
 
 FsWatchesRecursive::
 /: *new*
@@ -1482,7 +1485,7 @@ FsWatchesRecursive::
 
 Before request
 
-Info 130  [00:07:38.000] request:
+Info 131  [00:07:39.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -1508,7 +1511,7 @@ Info 130  [00:07:38.000] request:
       "seq": 3,
       "type": "request"
     }
-Info 131  [00:07:39.000] response:
+Info 132  [00:07:40.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -1517,7 +1520,7 @@ After request
 
 Before request
 
-Info 132  [00:07:40.000] request:
+Info 133  [00:07:41.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -1528,10 +1531,10 @@ Info 132  [00:07:40.000] request:
       "seq": 4,
       "type": "request"
     }
-Info 133  [00:07:41.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 134  [00:07:42.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 135  [00:07:43.000] Project '/tsconfig.json' (Configured)
-Info 136  [00:07:44.000] 	Files (101)
+Info 134  [00:07:42.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 135  [00:07:43.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 136  [00:07:44.000] Project '/tsconfig.json' (Configured)
+Info 137  [00:07:45.000] 	Files (101)
 	/index.ts SVC-1-1 "a"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;"
@@ -1634,23 +1637,23 @@ Info 136  [00:07:44.000] 	Files (101)
 	/lib/a_98.ts Text-1 "export const aa_98__0 = 0;"
 	/lib/a_99.ts Text-1 "export const aa_99__0 = 0;"
 
-Info 137  [00:07:45.000] -----------------------------------------------
-Info 138  [00:07:46.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
-Info 139  [00:07:47.000] 	Files (51)
+Info 138  [00:07:46.000] -----------------------------------------------
+Info 139  [00:07:47.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 140  [00:07:48.000] 	Files (51)
 
-Info 140  [00:07:48.000] -----------------------------------------------
-Info 141  [00:07:49.000] getCompletionData: Get current token: *
-Info 142  [00:07:50.000] getCompletionData: Is inside comment: *
-Info 143  [00:07:51.000] getCompletionData: Get previous token: *
-Info 144  [00:07:52.000] getExportInfoMap: cache miss or empty; calculating new results
-Info 145  [00:07:53.000] forEachExternalModuleToImportFrom autoImportProvider: *
-Info 146  [00:07:54.000] getExportInfoMap: done in * ms
-Info 147  [00:07:55.000] collectAutoImports: resolved 100 module specifiers, plus 0 ambient and 101 from cache (198.0% hit rate)
-Info 148  [00:07:56.000] collectAutoImports: response is incomplete
-Info 149  [00:07:57.000] collectAutoImports: *
-Info 150  [00:07:58.000] getCompletionData: Semantic work: *
-Info 151  [00:07:59.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
-Info 152  [00:08:00.000] response:
+Info 141  [00:07:49.000] -----------------------------------------------
+Info 142  [00:07:50.000] getCompletionData: Get current token: *
+Info 143  [00:07:51.000] getCompletionData: Is inside comment: *
+Info 144  [00:07:52.000] getCompletionData: Get previous token: *
+Info 145  [00:07:53.000] getExportInfoMap: cache miss or empty; calculating new results
+Info 146  [00:07:54.000] forEachExternalModuleToImportFrom autoImportProvider: *
+Info 147  [00:07:55.000] getExportInfoMap: done in * ms
+Info 148  [00:07:56.000] collectAutoImports: resolved 100 module specifiers, plus 0 ambient and 101 from cache (198.0% hit rate)
+Info 149  [00:07:57.000] collectAutoImports: response is incomplete
+Info 150  [00:07:58.000] collectAutoImports: *
+Info 151  [00:07:59.000] getCompletionData: Semantic work: *
+Info 152  [00:08:00.000] getCompletionsAtPosition: getCompletionEntriesFromSymbols: *
+Info 153  [00:08:01.000] response:
     {
       "response": {
         "flags": 9,
@@ -4838,7 +4841,7 @@ After request
 
 Before request
 
-Info 153  [00:08:01.000] request:
+Info 154  [00:08:02.000] request:
     {
       "command": "updateOpen",
       "arguments": {
@@ -4864,7 +4867,7 @@ Info 153  [00:08:01.000] request:
       "seq": 5,
       "type": "request"
     }
-Info 154  [00:08:02.000] response:
+Info 155  [00:08:03.000] response:
     {
       "response": true,
       "responseRequired": true
@@ -4873,7 +4876,7 @@ After request
 
 Before request
 
-Info 155  [00:08:03.000] request:
+Info 156  [00:08:04.000] request:
     {
       "command": "completionInfo",
       "arguments": {
@@ -4885,10 +4888,10 @@ Info 155  [00:08:03.000] request:
       "seq": 6,
       "type": "request"
     }
-Info 156  [00:08:04.000] Starting updateGraphWorker: Project: /tsconfig.json
-Info 157  [00:08:05.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
-Info 158  [00:08:06.000] Project '/tsconfig.json' (Configured)
-Info 159  [00:08:07.000] 	Files (101)
+Info 157  [00:08:05.000] Starting updateGraphWorker: Project: /tsconfig.json
+Info 158  [00:08:06.000] Finishing updateGraphWorker: Project: /tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed:: *ms
+Info 159  [00:08:07.000] Project '/tsconfig.json' (Configured)
+Info 160  [00:08:08.000] 	Files (101)
 	/index.ts SVC-1-2 "a_"
 	/lib/a_0.ts Text-1 "export const aa_0__0 = 0;"
 	/lib/a_1.ts Text-1 "export const aa_1__0 = 0;"
@@ -4991,16 +4994,16 @@ Info 159  [00:08:07.000] 	Files (101)
 	/lib/a_98.ts Text-1 "export const aa_98__0 = 0;"
 	/lib/a_99.ts Text-1 "export const aa_99__0 = 0;"
 
-Info 160  [00:08:08.000] -----------------------------------------------
-Info 161  [00:08:09.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
-Info 162  [00:08:10.000] 	Files (51)
+Info 161  [00:08:09.000] -----------------------------------------------
+Info 162  [00:08:10.000] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 163  [00:08:11.000] 	Files (51)
 
-Info 163  [00:08:11.000] -----------------------------------------------
-Info 164  [00:08:12.000] getExportInfoMap: cache hit
-Info 165  [00:08:13.000] continuePreviousIncompleteResponse: resolved 51 module specifiers, plus 0 ambient and 49 from cache
-Info 166  [00:08:14.000] continuePreviousIncompleteResponse: response is complete
-Info 167  [00:08:15.000] continuePreviousIncompleteResponse: *
-Info 168  [00:08:16.000] response:
+Info 164  [00:08:12.000] -----------------------------------------------
+Info 165  [00:08:13.000] getExportInfoMap: cache hit
+Info 166  [00:08:14.000] continuePreviousIncompleteResponse: resolved 51 module specifiers, plus 0 ambient and 49 from cache
+Info 167  [00:08:15.000] continuePreviousIncompleteResponse: response is complete
+Info 168  [00:08:16.000] continuePreviousIncompleteResponse: *
+Info 169  [00:08:17.000] response:
     {
       "response": {
         "flags": 13,
@@ -8522,7 +8525,7 @@ After request
 
 Before request
 
-Info 169  [00:08:17.000] request:
+Info 170  [00:08:18.000] request:
     {
       "command": "completionEntryDetails",
       "arguments": {
@@ -8546,8 +8549,8 @@ Info 169  [00:08:17.000] request:
       "seq": 7,
       "type": "request"
     }
-Info 170  [00:08:18.000] getExportInfoMap: cache hit
-Info 171  [00:08:19.000] response:
+Info 171  [00:08:19.000] getExportInfoMap: cache hit
+Info 172  [00:08:20.000] response:
     {
       "response": [
         {
