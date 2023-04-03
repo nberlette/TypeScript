@@ -1,7 +1,6 @@
 import {
     arrayToMap,
     CachedDirectoryStructureHost,
-    CharacterCodes,
     clearMap,
     closeFileWatcher,
     closeFileWatcherOf,
@@ -28,7 +27,7 @@ import {
     getDirectoryPath,
     getEffectiveTypeRoots,
     getNormalizedAbsolutePath,
-    getRootLength,
+    getPathComponents,
     HasInvalidatedResolutions,
     hasTrailingDirectorySeparator,
     ignoredPaths,
@@ -215,46 +214,27 @@ export function removeIgnoredPath(path: Path): Path | undefined {
  * @internal
  */
 export function canWatchDirectoryOrFile(dirPath: Path) {
-    const rootLength = getRootLength(dirPath);
-    if (dirPath.length === rootLength) {
-        // Ignore "/", "c:/"
-        return false;
-    }
-
-    let nextDirectorySeparator = dirPath.indexOf(directorySeparator, rootLength);
-    if (nextDirectorySeparator === -1) {
-        // ignore "/user", "c:/users" or "c:/folderAtRoot"
-        return false;
-    }
-
-    let pathPartForUserCheck = dirPath.substring(rootLength, nextDirectorySeparator + 1);
-    const isNonDirectorySeparatorRoot = rootLength > 1 || dirPath.charCodeAt(0) !== CharacterCodes.slash;
+    const pathComponents = getPathComponents(dirPath);
+     // Ignore "/", "c:/"
+    // ignore "/user", "c:/users" or "c:/folderAtRoot"
+    if (pathComponents.length <= 2) return false;
+    let userCheckIndex = 1;
+    const isNonDirectorySeparatorRoot = pathComponents[0] !== "/";
     if (isNonDirectorySeparatorRoot &&
-        dirPath.search(/[a-zA-Z]:/) !== 0 && // Non dos style paths
-        pathPartForUserCheck.search(/[a-zA-Z]\$\//) === 0) { // Dos style nextPart
-        nextDirectorySeparator = dirPath.indexOf(directorySeparator, nextDirectorySeparator + 1);
-        if (nextDirectorySeparator === -1) {
-            // ignore "//vda1cs4850/c$/folderAtRoot"
-            return false;
-        }
-
-        pathPartForUserCheck = dirPath.substring(rootLength + pathPartForUserCheck.length, nextDirectorySeparator + 1);
+        pathComponents[0].search(/[a-zA-Z]:/) !== 0 && // Non dos style paths
+        pathComponents[1].search(/[a-zA-Z]\$$/) === 0) { // Dos style nextPart
+        // ignore "//vda1cs4850/c$/folderAtRoot"
+        if (pathComponents.length === 3) return false;
+        userCheckIndex = 2;
     }
 
     if (isNonDirectorySeparatorRoot &&
-        pathPartForUserCheck.search(/users\//i) !== 0) {
+        !pathComponents[userCheckIndex].match(/^users$/i)) {
         // Paths like c:/folderAtRoot/subFolder are allowed
         return true;
     }
 
-    for (let searchIndex = nextDirectorySeparator + 1, searchLevels = 2; searchLevels > 0; searchLevels--) {
-        searchIndex = dirPath.indexOf(directorySeparator, searchIndex) + 1;
-        if (searchIndex === 0) {
-            // Folder isnt at expected minimum levels
-            return false;
-        }
-    }
-    return true;
+    return pathComponents.length > userCheckIndex + 3;
 }
 
 /** @internal */
