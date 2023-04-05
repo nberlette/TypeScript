@@ -385,7 +385,7 @@ interface ClassFieldDecoratorContext<
         has(object: This): boolean;
 
         /**
-         * Invokes the getter on the provided object.
+         * Gets the value of the field on the provided object.
          *
          * @example
          * ```ts
@@ -395,7 +395,7 @@ interface ClassFieldDecoratorContext<
         get(object: This): Value;
 
         /**
-         * Invokes the setter on the provided object.
+         * Sets the value of the field on the provided object.
          *
          * @example
          * ```ts
