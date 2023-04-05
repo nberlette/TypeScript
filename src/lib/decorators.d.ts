@@ -76,13 +76,22 @@ interface ClassMethodDecoratorContext<
     readonly access: {
         /**
          * Determines whether an object has a property with the same name as the decorated element.
+         *
+         * @example
+         * ```ts
+         * if (context.access.has(instance)) {
+         *   // ...
+         * }
+         * ```
          */
         has(object: This): boolean;
         /**
          * Gets the current value of the method from the provided object.
          *
          * @example
+         * ```ts
          * let fn = context.access.get(instance);
+         * ```
          */
         get(object: This): Value;
     };
@@ -94,7 +103,7 @@ interface ClassMethodDecoratorContext<
      *
      * @example
      * ```ts
-     * const bound: ClassMethodDecoratorFunction = (value, context) {
+     * const bound: ClassMethodDecoratorFunction = (value, context) => {
      *   if (context.private) throw new TypeError("Not supported on private methods.");
      *   context.addInitializer(function () {
      *     this[context.name] = this[context.name].bind(this);
@@ -140,13 +149,22 @@ interface ClassGetterDecoratorContext<
     readonly access: {
         /**
          * Determines whether an object has a property with the same name as the decorated element.
+         *
+         * @example
+         * ```ts
+         * if (context.access.has(instance)) {
+         *   // ...
+         * }
+         * ```
          */
         has(object: This): boolean;
         /**
          * Invokes the getter on the provided object.
          *
          * @example
+         * ```ts
          * let value = context.access.get(instance);
+         * ```
          */
         get(object: This): Value;
     };
@@ -185,13 +203,22 @@ interface ClassSetterDecoratorContext<
     readonly access: {
         /**
          * Determines whether an object has a property with the same name as the decorated element.
+         *
+         * @example
+         * ```ts
+         * if (context.access.has(instance)) {
+         *   // ...
+         * }
+         * ```
          */
         has(object: This): boolean;
         /**
          * Invokes the setter on the provided object.
          *
          * @example
+         * ```ts
          * context.access.set(instance, value);
+         * ```
          */
         set(object: This, value: Value): void;
     };
@@ -230,6 +257,13 @@ interface ClassAccessorDecoratorContext<
     readonly access: {
         /**
          * Determines whether an object has a property with the same name as the decorated element.
+         *
+         * @example
+         * ```ts
+         * if (context.access.has(instance)) {
+         *   // ...
+         * }
+         * ```
          */
         has(object: This): boolean;
 
@@ -237,7 +271,9 @@ interface ClassAccessorDecoratorContext<
          * Invokes the getter on the provided object.
          *
          * @example
+         * ```ts
          * let value = context.access.get(instance);
+         * ```
          */
         get(object: This): Value;
 
@@ -245,7 +281,9 @@ interface ClassAccessorDecoratorContext<
          * Invokes the setter on the provided object.
          *
          * @example
+         * ```ts
          * context.access.set(instance, value);
+         * ```
          */
         set(object: This, value: Value): void;
     };
@@ -268,7 +306,9 @@ interface ClassAccessorDecoratorTarget<This, Value> {
      * Invokes the getter that was defined prior to decorator application.
      *
      * @example
+     * ```ts
      * let value = target.get.call(instance);
+     * ```
      */
     get(this: This): Value;
 
@@ -276,7 +316,9 @@ interface ClassAccessorDecoratorTarget<This, Value> {
      * Invokes the setter that was defined prior to decorator application.
      *
      * @example
+     * ```ts
      * target.set.call(instance, value);
+     * ```
      */
     set(this: This, value: Value): void;
 }
@@ -294,6 +336,7 @@ interface ClassAccessorDecoratorResult<This, Value> {
 
     /**
      * An optional replacement setter function. If not provided, the existing setter function is used instead.
+     * @param value The incoming value for the decorated accessor field.
      */
     set?(this: This, value: Value): void;
 
@@ -331,16 +374,33 @@ interface ClassFieldDecoratorContext<
     readonly access: {
         /**
          * Determines whether an object has a property with the same name as the decorated element.
+         *
+         * @example
+         * ```ts
+         * if (context.access.has(instance)) {
+         *   // ... 
+         * }
+         * ```
          */
         has(object: This): boolean;
 
         /**
-         * Gets the value of the field on the provided object.
+         * Invokes the getter on the provided object.
+         *
+         * @example
+         * ```ts
+         * let value = context.access.get(instance);
+         * ```
          */
         get(object: This): Value;
 
         /**
-         * Sets the value of the field on the provided object.
+         * Invokes the setter on the provided object.
+         *
+         * @example
+         * ```ts
+         * context.access.set(instance, value);
+         * ```
          */
         set(object: This, value: Value): void;
     };
